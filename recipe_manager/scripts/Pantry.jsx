@@ -69,17 +69,18 @@ export class PantryRow extends Component {
   constructor(props) {
     super(props);
     this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
-    this.name = this.props.name;
-    this.quantity = this.props.quantity;
+    // this.id = this.props.key;
   }
 
-  handleDeleteEvent(event, item){
+  handleDeleteEvent(event){
     if (event.type === "click"){
       // var item = event.currentTarget;
-      console.log(item);
+      console.log(this);
       console.log("click happened");
+      // console.log(.key);
       event.preventDefault();
-      this.props.rmFunc(this.name, this.quantity);
+
+      this.props.rmFunc(this.props.id);
     }
   }
 
@@ -88,11 +89,11 @@ export class PantryRow extends Component {
     return (
       // Add your component markup and other subcomponent references here.
       <div className='PantryRow' >
-      <p>Quantity: {this.quantity}</p>
-      <p>Name: {this.name}</p>
+      <p>Quantity: {this.props.quantity}</p>
+      <p>Name: {this.props.name}</p>
       <button
       className="btn btn-default"
-      onClick={this.handleDeleteEvent.bind(this)}>Delete</button>
+      onClick={this.handleDeleteEvent}>Delete</button>
 
       </div>
     );
@@ -112,7 +113,7 @@ export class PantryList extends Component {
     var Items = this.props.items.map((data, index) => {
       return (
         //Generate a row for each item for the list
-        <PantryRow key={index} quantity={data.quantity} name={data.name} rmFunc={this.props.rmFunc} />
+        <PantryRow key={index} id={data.id} quantity={data.quantity} name={data.name} rmFunc={this.props.rmFunc} />
       )
     });
 
