@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Pantry from './Pantry.jsx';
 import Recipes from './Recipes.jsx'
+import Search from './Search.jsx'
 
 
 
@@ -8,50 +9,59 @@ export default class App extends Component {
 
   constructor(props){
     super(props);
-    //When chat is first loaded, the chat window should be shown, there should
-    //be no messages loaded and no sessionKey exists yet because it has not
-    //communicated with the backend yet.
-    this.state = { pantry: [], recipes:[{name:"recipe1", id:"1"}, {name:"recipe2", id:"2"}, {name:"recipe3", id:"3"}, {name:"recipe4", id:"4"}, {name:"recipe5", id:"5"}], sessionKey: null};
-
+    //Initial state of the app onLoad
+    this.state = { pantry: [], recipes:[{name:"recipe1", id:"1"}, {name:"recipe2", id:"2"}, {name:"recipe3", id:"3"}, {name:"recipe4", id:"4"}, {name:"recipe5", id:"5"}], isLoading : false, sessionKey: null};
+    //Bind all necessary functions
     this.insertToPantry = this.insertToPantry.bind(this);
     this.removeFromPantry = this.removeFromPantry.bind(this);
     this.insertToRecipes = this.insertToRecipes.bind(this);
     this.removeFromRecipes = this.removeFromRecipes.bind(this);
+    this.search = this.search.bind(this);
     this.hash = this.hash.bind(this);
+
 
 
   }
 
 
+  search(query){
+    //Update the loading state so the animation will show
+    this.setState({isLoading : true});
+  }
+
+
+/*
+* State Logic - These are functions for modifying the global state of the app.
+* This was designed like this so API calls/validation to database backend can be
+* handled by the App component
+*/
 
   insertToPantry(name, amount){
+    //Generate a string unique to the item by concating all fields into a string
+    //then hashing it
     var key = this.hash(name + amount);
-    console.log("gen key" + key);
+    //Create item
     var pantryItem = { quantity : amount, name : name, id:key };
+    //Update State
     this.setState({pantry: this.state.pantry.concat([pantryItem])});
-    //send item
+    //TODO:send item
   }
 
 
 
   removeFromPantry(id){
-    // var item = {quantity: amount, name:name};
-    //
-    // console.log(item);
     var items = this.state.pantry.filter(function(itm){
-      console.log("current" + itm.id);
-      console.log("serch" + id);
-      console.log(id != itm.id);
+      //Return all elements that do not have the same id
       return id !== itm.id;
     });
-
+    //Update the state to no longer include the element being searched for
+    //If it doesn't exist, the list will not be changed
     this.setState({ pantry: items });
-    // this.forceUpdate();
   }
 
 
   insertToRecipes(name){
-
+    //Create new recipe item
     var recipeItem = {name : name, id:this.hash(name)};
     this.setState({recipes: this.state.recipes.concat([recipeItem])});
 
@@ -62,12 +72,9 @@ export default class App extends Component {
   }
 
   hash(input){
-
+    //Hash func inspired by http://stackoverflow.com/a/7616484/3282276
+    //Needed to generate unique keys for components
     var hash = 0, i, chr, len;
-
-       // do something else
-
-
     if (input.length === 0){
       return hash;
     }
@@ -84,8 +91,9 @@ export default class App extends Component {
   render() {
     return (
       <div id="App">
-        <Pantry className='Pantry' items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} />
-        <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} />
+        <Pantry className='Pantry' items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} />
+        <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} loading={this.state.isLoading} />
+        <Search className='Search' searchFunc={this.search} />
       </div>
     );
   }

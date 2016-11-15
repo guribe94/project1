@@ -1,31 +1,36 @@
 import React, {Component} from 'react';
 
+var Loading = require('react-loading');
+
 export default class Recipes extends Component {
   constructor(props) {
     super(props);
-
-    // this.props.items.map((data, index) => {
-    //   this.add(data.name, data.index);
-    // });
 
   }
 
 
   render(){
-    // Loop through the list of items in the pantry
-    var Items = this.props.items.map((data) => {
-      return (
-        //Generate a row for each item for the list
-        <RecipeRow key={data.id} name={data.name} rmFunc={this.props.rmFunc} />
-      )
-    });
 
-    return (
-      <div className='RecipeItems'>
-        <h1>Recipes</h1>
-        {Items}
-      </div>
-    );
+    if(this.props.loading){
+      return(
+        <Loading className='db_load_animation' type='bars' color='#e3e3e3' />
+      );
+    }
+  else{
+      // Loop through the list of items in the pantry
+      var Items = this.props.items.map((data) => {
+        return (
+          //Generate a row for each item for the list
+          <RecipeRow key={data.id} name={data.name} rmFunc={this.props.rmFunc} />
+        )
+      });
+      return (
+        <div className='RecipeItems'>
+          <h1>Recipes</h1>
+          {Items}
+        </div>
+      );
+    }
   }
 }
 
@@ -65,6 +70,7 @@ export class RecipeRow extends Component {
 
 
   render() {
+
     return (
       // Add your component markup and other subcomponent references here.
       <div className='RecipeRow' onClick={this.handleClick.bind(this)} >

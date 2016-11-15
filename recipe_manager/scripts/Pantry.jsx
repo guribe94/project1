@@ -24,21 +24,24 @@ export class PantryInsert extends Component {
     super(props);
     this.handleInsertEvent = this.handleInsertEvent.bind(this);
 
-
   }
 
 
   handleInsertEvent(event, item) {
+    //Onbutton click or enter key press
     if (event.type === "click" || (event.keyCode && event.keyCode === 13)) {
+      //Get the values from the textboxes
       var name = this.refs.name.value.trim();
       var amt = this.refs.quantity.value.trim();
       console.log(name);
       console.log(amt);
       // this.props.insertToPantry(name, amt);
+      //Stop the normal form sending action (page reload, POST, etc)
       event.preventDefault();
       event.stopPropagation(); // in case if send button would be ABOVE another button from the site
+      //Add the item to the pantry
       this.props.addFunc(name, amt);
-      //TODO: Send to database
+      //Reset the textboxes
       this.refs.name.value = '';
       this.refs.quantity.value = '';
     }
@@ -48,7 +51,6 @@ export class PantryInsert extends Component {
 
   render() {
     return (
-      // Add your component markup and other subcomponent references here.
       <form>
       Ingredient:
       <input type="text" name="quantity" ref='name' />
@@ -74,10 +76,8 @@ export class PantryRow extends Component {
 
   handleDeleteEvent(event){
     if (event.type === "click"){
-      // var item = event.currentTarget;
       console.log(this);
       console.log("click happened");
-      // console.log(.key);
       event.preventDefault();
 
       this.props.rmFunc(this.props.id);
@@ -87,7 +87,6 @@ export class PantryRow extends Component {
 
   render() {
     return (
-      // Add your component markup and other subcomponent references here.
       <div className='PantryRow' >
       <p>Quantity: {this.props.quantity}</p>
       <p>Name: {this.props.name}</p>
