@@ -17,6 +17,7 @@ export default class App extends Component {
     this.insertToRecipes = this.insertToRecipes.bind(this);
     this.removeFromRecipes = this.removeFromRecipes.bind(this);
     this.search = this.search.bind(this);
+    this.filterRecipes = this.filterRecipes.bind(this);
     this.hash = this.hash.bind(this);
 
 
@@ -86,14 +87,19 @@ export default class App extends Component {
     return hash;
   }
 
+  filterRecipes(filter){
+
+  }
+
 
 
   render() {
     return (
       <div id="App">
         <Pantry className='Pantry' items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} />
+        <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes}/>
         <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} loading={this.state.isLoading} />
-        <Search className='Search' searchFunc={this.search} />
+
       </div>
     );
   }

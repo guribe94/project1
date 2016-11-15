@@ -11,6 +11,7 @@ export default class Pantry extends Component {
   render() {
     return (
       <div>
+      <div id='pantry_header'>Pantry</div>
       <PantryInsert addFunc={this.props.addFunc} />
       <PantryList items={this.props.items} rmFunc={this.props.rmFunc} />
       </div>
@@ -104,7 +105,16 @@ export class PantryList extends Component {
 
   constructor(props) {
     super(props);
-  }
+    this.onRowRender = this.onRowRender.bind(this);
+ 	}
+
+ 	onRowRender(row) {
+    //This functions scrolls to the bottom of the list. It is called after every
+    //new row is inserted
+	  var rowDOM = ReactDOM.findDOMNode(row);
+		var parent = rowDOM.parentNode;
+		parent.scrollTop = parent.scrollHeight;
+	}
 
 
   render(){
@@ -112,7 +122,7 @@ export class PantryList extends Component {
     var Items = this.props.items.map((data, index) => {
       return (
         //Generate a row for each item for the list
-        <PantryRow key={index} id={data.id} quantity={data.quantity} name={data.name} rmFunc={this.props.rmFunc} />
+        <PantryRow key={index} id={data.id} quantity={data.quantity} name={data.name} rmFunc={this.props.rmFunc} onRender={this.onRowRender} />
       )
     });
 

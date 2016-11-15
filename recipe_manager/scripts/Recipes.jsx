@@ -26,7 +26,7 @@ export default class Recipes extends Component {
       });
       return (
         <div className='RecipeItems'>
-          <h1>Recipes</h1>
+          <div className="recipes_header">Recipes</div>
           {Items}
         </div>
       );
