@@ -16,6 +16,7 @@ Read about it online.
 """
 
 import os
+import sys
 from sqlalchemy import *
 from sqlalchemy.pool import NullPool
 from flask import Flask, request, render_template, g, jsonify, redirect, Response, send_from_directory
@@ -84,7 +85,7 @@ def before_request():
 
   The variable g is globally accessible
   """
-  g.pantryid=18
+ 
   try:
     g.conn = engine.connect()
   except:
@@ -275,11 +276,15 @@ def addPantryItem():
   item = request.form['item']
   # print "username", username
   print "item", item
+  statement = ("""SELECT * FROM pantry;""");
+  cursor=g.conn.execute(statement)
 
+  pantryid = 0
+  for row in cursor:
+ 	 pantryid+=1
 
-  statement = ("""INSERT INTO pantry VALUES("""+str(g.pantryid)+""",'"""+str(item)+"""');""")
+  statement = ("""INSERT INTO pantry VALUES("""+str(pantryid+1)+""",'"""+str(item)+"""');""")
   g.conn.execute(statement)
-  g.pantryid+=1
 
   statement = ("""SELECT pantry.pid, ingredients.iid FROM pantry,ingredients WHERE ingredients.name=pantry.name AND ingredients.name='"""+item+"""';""")
   cursor = g.conn.execute(statement)
@@ -338,7 +343,7 @@ def editPantryItem():
 
         li = []
         for row in cursor:
-	      li.append(row)
+	      li.append(dict(row))
 
 	output = {'pantry':li}
 
@@ -363,8 +368,10 @@ def deletePantryItem():
         itemID = request.form["pid"]
 
         print "itemID given", itemID
-
-	statement = ("""DELETE from pantry WHERE pid="""+itemID+""";""")
+	
+	statement = ("""DELETE FROM carries WHERE pid="""+itemID+""";""")
+	
+	statement = ("""DELETE FROM  pantry WHERE pid="""+itemID+""";""")
 	cursor = g.conn.execute(statement)
 
         statement = ("""SELECT * FROM pantry;""")
@@ -372,7 +379,7 @@ def deletePantryItem():
 
         li = []
         for row in cursor:
-              li.append(row)
+              li.append(dict(row))
 
         #Pantry items should be JSON {name, key}
         output = {'success': True, 'pantry':li}
@@ -433,13 +440,30 @@ def register():
         # JSON data from the POST request
         username = request.form["username"]
         passwd = request.form["password"]
+	statement = ("""SELECT username FROM users;""")
+        cursor = g.conn.execute(statement)
+        uid = 0
+        for row in cursor:
+            uid+=1
+            
 
         print "username given", username
         print "password given", password
 
         # TODO: Create the user
-
-        output["success"] = success
+        statement = ("""SELECT username FROM users;""")
+        cursor = g.conn.execute(statement)
+        success = True
+        for row in cursor:
+		if row[0] == username:
+			success=False
+        
+	if success == True:
+		uid+=1
+		statement = ("""INSERT INTO users VALUES("""+str(uid)+""",'"""+username+"""','"""+password+""");""")
+		g.conn.execute(statement)
+        
+	output["success"] = success
         # sessionkey =
         print "output", output
 
@@ -454,7 +478,7 @@ def register():
             output["success"] = False
             output["sessionKey"] = ''
 
-
+        output = {success:username}
         return jsonify(output)
 
 
@@ -471,6 +495,20 @@ def login():
 
         print "username given", username
         print "password given", password
+
+	statement = ("""SELECT username,password FROM users;""")
+        cursor = g.conn.execute(statement)
+        success = False
+        for row in cursor:
+		print username
+                print row[0]
+                print password
+                print row[1]
+		sys.stdout.flush()
+                if row[0] == username and row[1] == password:
+			success=True
+
+
 
         # TODO: AUTH the user
         # sessionkey
@@ -490,7 +528,7 @@ def login():
             output["success"] = False
             output["sessionKey"] = ''
 
-
+	output = {success:username}
         return jsonify(output)
 
 
