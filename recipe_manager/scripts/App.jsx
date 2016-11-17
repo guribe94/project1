@@ -69,15 +69,9 @@ export default class App extends Component {
         item: name
       },
       success: function(data) {
-        console.log("returned data" + data);
-        var response = {
-          success: data.success,
-          id: data.itemID
-        };
+        console.log("returned data" + JSON.stringify(data));
 
         console.log("right after ajax call");
-        if (response.success === true) {
-          console.log("in");
           //Create item
           var pantryItem = {
             name: name,
@@ -85,9 +79,9 @@ export default class App extends Component {
           };
           //Update State
           this.setState({
-            pantry: this.state.pantry.concat([pantryItem])
+            pantry: data.pantry
           });
-        }
+
       }.bind(this)});
     }
 

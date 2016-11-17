@@ -131,7 +131,7 @@ export class PantryList extends Component {
     var Items = this.props.items.map((data, index) => {
       return (
         //Generate a row for each item for the list
-        <PantryRow key={index} id={data.id} name={data.name} rmFunc={this.props.rmFunc} onRender={this.onRowRender} />
+        <PantryRow key={index} id={data.pid} name={data.name} rmFunc={this.props.rmFunc} onRender={this.onRowRender} />
       )
     });
 
