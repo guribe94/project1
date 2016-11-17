@@ -34,12 +34,13 @@ export default class App extends Component {
     this.insertToPantry = this.insertToPantry.bind(this);
     this.removeFromPantry = this.removeFromPantry.bind(this);
     this.editPantryItem = this.editPantryItem.bind(this);
-    this.insertToRecipes = this.insertToRecipes.bind(this);
-    this.removeFromRecipes = this.removeFromRecipes.bind(this);
+    // this.insertToRecipes = this.insertToRecipes.bind(this);
+    // this.removeFromRecipes = this.removeFromRecipes.bind(this);
     this.search = this.search.bind(this);
     this.filterRecipes = this.filterRecipes.bind(this);
     this.hash = this.hash.bind(this);
     this.verifyUser = this.verifyUser.bind(this);
+    this.addUser = this.addUser.bind(this);
 
   }
 
@@ -124,46 +125,46 @@ export default class App extends Component {
 
     }
 
-    insertToRecipes(name) {
-      //Create new recipe item
-      var recipeItem = {
-        name: name,
-        id: this.hash(name)
-      };
-      this.setState({
-        recipes: this.state.recipes.concat([recipeItem])
-      });
-      // $.ajax({
-      //   url: '/chat',
-      //   method: 'POST',
-      //   data: {},
-      //   success: function(data) {
-      //     var response = {username:BOT_NAME, message:data["msg"][0]};
-      //     if(response.message === '{}'){
-      //       console.log("No message sent back");
-      //       response = {username:BOT_NAME, message:ERROR_MSG};
-      //     }
-      //   }.bind(this)
-      // });
-
-    }
-
-    removeFromRecipes(index) {
-
-      // $.ajax({
-      //   url: '/chat',
-      //   method: 'POST',
-      //   data: {recipeID:rid},
-      //   success: function(data) {
-      //     var response = {username:BOT_NAME, message:data["msg"][0]};
-      //     if(response.message === '{}'){
-      //       console.log("No message sent back");
-      //       response = {username:BOT_NAME, message:ERROR_MSG};
-      //     }
-      //   }.bind(this)
-      // });
-
-    }
+    // insertToRecipes(name) {
+    //   //Create new recipe item
+    //   var recipeItem = {
+    //     name: name,
+    //     id: this.hash(name)
+    //   };
+    //   this.setState({
+    //     recipes: this.state.recipes.concat([recipeItem])
+    //   });
+    //   // $.ajax({
+    //   //   url: '/chat',
+    //   //   method: 'POST',
+    //   //   data: {},
+    //   //   success: function(data) {
+    //   //     var response = {username:BOT_NAME, message:data["msg"][0]};
+    //   //     if(response.message === '{}'){
+    //   //       console.log("No message sent back");
+    //   //       response = {username:BOT_NAME, message:ERROR_MSG};
+    //   //     }
+    //   //   }.bind(this)
+    //   // });
+    //
+    // }
+    //
+    // removeFromRecipes(index) {
+    //
+    //   // $.ajax({
+    //   //   url: '/chat',
+    //   //   method: 'POST',
+    //   //   data: {recipeID:rid},
+    //   //   success: function(data) {
+    //   //     var response = {username:BOT_NAME, message:data["msg"][0]};
+    //   //     if(response.message === '{}'){
+    //   //       console.log("No message sent back");
+    //   //       response = {username:BOT_NAME, message:ERROR_MSG};
+    //   //     }
+    //   //   }.bind(this)
+    //   // });
+    //
+    // }
 
     hash(input) {
       //Hash func inspired by http://stackoverflow.com/a/7616484/3282276
@@ -199,8 +200,8 @@ export default class App extends Component {
 
     verifyUser(username, password) {
       //TODO:Make call to DB
-      var valid = false;
-
+      console.log("found username" + username);
+      console.log("pass " + password);
       $.ajax({
         url: '/login',
         method: 'POST',
@@ -208,16 +209,13 @@ export default class App extends Component {
         success: function(data) {
           var response = {success:data.success, sessionKey:data.sessionKey};
           if(response.success){
-            this.setState({hasUser : true, sessionKey : response.sessionKey});
-            valid = true;
+            this.setState({hasUser : true, sessionKey : username});
 
           }else{
             this.setState({hasUser:false, sessionKey:null});
-            valid = false;
           }
         }.bind(this)
       });
-      if (valid) {}
 
     }
 
@@ -247,7 +245,7 @@ export default class App extends Component {
       return (
         <div id="App">
 
-          <Header className='Header navbar-header ' userAuthFunc={this.verifyUser} hasUser={this.state.hasUser}/>
+          <Header className='Header navbar-header ' addUserFunc={this.addUser} userAuthFunc={this.verifyUser} hasUser={this.state.hasUser} user={this.state.sessionKey}/>
           <div className="main">
           <Pantry items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
           <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} loading={this.state.isLoading}/>
