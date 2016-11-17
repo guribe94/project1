@@ -25,7 +25,7 @@ export default class App extends Component {
       sessionKey: null,
       quickFilter:false,
       noMeatFilter:false,
-      onlyPantryFilter:false
+      inPantryFilter:false
     };
     //Bind all necessary functions
     this.insertToPantry = this.insertToPantry.bind(this);
@@ -71,11 +71,11 @@ export default class App extends Component {
         console.log("returned data" + JSON.stringify(data));
 
         console.log("right after ajax call");
-          //Create item
-          //Update State
-          this.setState({
-            pantry: data.pantry
-          });
+        //Create item
+        //Update State
+        this.setState({
+          pantry: data.pantry
+        });
 
       }.bind(this)});
     }
@@ -100,7 +100,7 @@ export default class App extends Component {
           this.setState({ pantry : data.pantry });
         }.bind(this)
       });
-      console.log("The current state is" + JSON.stringify(this.state));
+
 
     }
 
@@ -177,19 +177,23 @@ export default class App extends Component {
 
     filterRecipes(filter) {
 
+      console.log("given filter" + JSON.stringify(filter));
       if(filter.filterName === 'quickFilter'){
         this.setState({quickFilter: filter.value});
       }
 
       if(filter.filterName === 'noMeatFilter'){
-        this.setState({quickFilter: filter.value});
+        this.setState({noMeatFilter: filter.value});
       }
 
       if(filter.filterName === 'inPantryFilter'){
-        this.setState({quickFilter: filter.value});
+        this.setState({inPantryFilter: filter.value});
       }
 
-      var currentFilters = this.getCurrentFilters();
+      console.log("The current state is" + JSON.stringify(this.state));
+    }
+
+      // var currentFilters = this.getCurrentFilters();
 
       // $.ajax({
       //   url: '/chat',
@@ -201,11 +205,18 @@ export default class App extends Component {
       //   }.bind(this)
       // });
 
+
+
+
+    getCurrentFilters() {
+      var filters = {
+        inPantry: this.state.inPantry,
+        quick: this.state.quick,
+        noMeat: this.state.noMeat
+      };
+      return filters;
     }
 
-    getCurrentFilters(){
-      return {}
-    }
 
     verifyUser(username, password) {
       //TODO:Make call to DB
@@ -232,7 +243,7 @@ export default class App extends Component {
       console.log("found username" + username);
       console.log("pass " + password);
       $.ajax({
-        url: '/login',
+        url: '/register',
         method: 'POST',
         data: {username: username, password: password},
         success: function(data) {
@@ -254,12 +265,12 @@ export default class App extends Component {
       return (
         <div id="App">
 
-          <Header className='Header navbar-header ' addUserFunc={this.addUser} userAuthFunc={this.verifyUser} hasUser={this.state.hasUser} user={this.state.sessionKey}/>
+          <Header className='Header navbar-header' addUserFunc={this.addUser} userAuthFunc={this.verifyUser} hasUser={this.state.hasUser} user={this.state.sessionKey}/>
           <div className="main">
-          <Pantry items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
-          <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} filterFunc={this.filterRecipes} loading={this.state.isLoading}/>
-        </div>
-          <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes}/>
+            <Pantry items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
+            <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} filterFunc={this.filterRecipes} loading={this.state.isLoading}/>
+          </div>
+          <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes} inPantry={this.state.inPantryFilter}  quick={this.state.quickFilter} noMeat={this.state.noMeatFilter}/>
         </div>
       );
     }

@@ -1,16 +1,16 @@
 {
-  "name": "Recipe_Manager",
-  "version": "4.0.0",
+  "name": "recipe_manager",
+  "version": "1.0.0",
   "description": "An application that helps you pick a recipe based on what is in your kitchen",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "./node_modules/.bin/cross-env BABEL_ENV=production ./node_modules/.bin/webpack --config webpack.config.production.js",
-    "lint": "./node_modules/.bin/eslint ."
+    "build": "cross-env BABEL_ENV=production ./node_modules/.bin/webpack --config webpack.config.production.js",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate.git"
+    "url": "git+https://github.com/vasanthk/react-es6-webpack-boilerplate.git"
   },
   "keywords": [
     "react",
@@ -20,7 +20,7 @@
   ],
   "author": "Gabriel Uribe and Justin Borzcuk",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/vasanthk/react-es6-webpack-boilerplate#readme",
   "dependencies": {
     "babel-runtime": "^6.3.19",
     "react": "^0.14.5",
@@ -43,5 +43,8 @@
     "react-transform-hmr": "^1.0.1",
     "webpack": "^1.8.4",
     "webpack-dev-server": "^1.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate/issues"
   }
 }
