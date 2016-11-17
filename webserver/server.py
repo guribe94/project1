@@ -260,24 +260,26 @@ def isAuthenticated(session_id):
 # Example of adding new data to the database
 @app.route('/addPantryItem', methods=['POST'])
 def addPantryItem():
+
+  output = {}
   username = request.form['username']
   item = request.form['item']
   print "username", username
   print "item", item
 
-  #TODO: Add this item to the users pantry
-  #TODO: Get the new pantry and return it
+  # TODO: Add this item to the users pantry
+  # TODO: Get the new pantry and return it
   # jsonify(output)
 
   # cmd = 'INSERT INTO test(name) VALUES (:name1), (:name2)';
   # g.conn.execute(text(cmd), name1=name, name2=name);
-  # return redirect('/')
-
-
+  return jsonify(output)
 
  # Example of adding new data to the database
- @app.route('/editPantryItem', methods=['POST'])
- def editPantryItem():
+
+
+@app.route('/editPantryItem', methods=['POST'])
+def editPantryItem():
     if (request.method == "POST"):
         output = {}
         # JSON data from the POST request
@@ -291,14 +293,13 @@ def addPantryItem():
 
         # TODO:Make the DB Query
 
-
-    #TODO: Get the new pantry and return it
+    # TODO: Get the new pantry and return it
     # jsonify(output)
    # name = request.form['name']
    # print name
    # cmd = 'INSERT INTO test(name) VALUES (:name1), (:name2)';
    # g.conn.execute(text(cmd), name1 = name, name2 = name);
-   # return redirect('/')
+    return jsonify(output)
 
 
 
@@ -316,7 +317,7 @@ def deletePantryItem():
         print "itemID given", itemID
 
         # TODO:Make the DB Query
-    #TODO: Get the new pantry and return it
+    # TODO: Get the new pantry and return it
     # jsonify(output)
 
 
@@ -335,18 +336,19 @@ def deletePantryItem():
 def sync():
     """"
     A call to this function is made whenever the appliction connects to the database and when it needs to sync its state with the database
-    """"
-  user = request.form['username']
+    """
+    output = {}
+    user = request.form['username']
   # TODO: Return pantry and recipes
   # print name
   # cmd = 'INSERT INTO test(name) VALUES (:name1), (:name2)';
   # g.conn.execute(text(cmd), name1 = name, name2 = name);
-  # return redirect('/')
+    return jsonify(output)
 
 
 
- @app.route('/search', methods=['POST'])
- def searchDatabase():
+@app.route('/search', methods=['POST'])
+def searchDatabase():
      """
      Search database according to given query
      """
@@ -365,7 +367,7 @@ def sync():
 
 
 @app.route('/register')
-def login():
+def register():
 
     if (request.method == "POST"):
         output = {}
