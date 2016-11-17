@@ -70,6 +70,7 @@ export class PantryRow extends Component {
   constructor(props) {
     super(props);
     this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
+    this.handleEditEvent = this.handleEditEvent.bind(this);
     // this.id = this.props.key;
   }
 
@@ -83,11 +84,22 @@ export class PantryRow extends Component {
     }
   }
 
+  handleEditEvent(event){
+    if (event.type === "click"){
+      console.log(this);
+      console.log("click happened");
+      event.preventDefault();
+      this.props.editFunc(this.props.id);
+    }
+  }
+
 
   render() {
     return (
       <div className='PantryRow' >
       <p>Name: {this.props.name}</p>
+      <button type="button" className="btn btn-default btn-sm"
+        onClick={this.handleFilterEvent}>Edit</button>
       <button
       className="btn btn-block btn-lg btn-danger"
       onClick={this.handleDeleteEvent}>Delete</button>

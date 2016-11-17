@@ -270,18 +270,18 @@ def isAuthenticated(session_id):
 def addPantryItem():
 
   output = {}
-  username = request.form['username']
+  # username = request.form['username']
   item = request.form['item']
-  print "username", username
+  # print "username", username
   print "item", item
-  
+
 
   statement = ("""INSERT INTO pantry VALUES("""+pantryid+""","""+item+""");""")
   try:
 	g.conn.execute(statement)
   except:
   	pantryid+=1
-  
+
   statement = (""""SELECT * FROM pantry""");
   cursor=g.conn.execute(statement)
   li = []
@@ -325,7 +325,7 @@ def editPantryItem():
         li = []
         for row in cursor:
 	      li.append(row)
-	
+
 	output = {'pantry':li}
 
     # TODO: Get the new pantry and return it
@@ -356,16 +356,16 @@ def deletePantryItem():
 
         statement = ("""SELECT * FROM pantry;""")
         cursor = g.conn.execute(statement)
- 
+
         li = []
         for row in cursor:
               li.append(row)
- 
+
         output = {'pantry':li}
 
         # TODO:Make the DB Query
     # TODO: Get the new pantry and return it
-    
+
     return jsonify(output)
 
 
@@ -406,7 +406,6 @@ def searchDatabase():
      # TODO: DO THE SEARCH
      if (request.method == "POST"):
          output = {}
-
 
          return jsonify(output)
 
