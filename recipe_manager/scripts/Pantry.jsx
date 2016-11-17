@@ -10,7 +10,7 @@ export default class Pantry extends Component {
 
   render() {
     return (
-      <div>
+      <div className='Pantry' >
       <div id='pantry_header'>Pantry</div>
       <PantryInsert addFunc={this.props.addFunc} />
       <PantryList items={this.props.items} rmFunc={this.props.rmFunc} />
@@ -53,7 +53,7 @@ export class PantryInsert extends Component {
   render() {
     return (
       <form>
-      <input type="text" className="form-control" name="name" ref='name' placeholder='Item'/>
+      <input type="text" name="name" ref='name' placeholder='Item'/>
 
       <button
       className="btn btn-block btn-lg btn-primary"

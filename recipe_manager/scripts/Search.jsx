@@ -47,7 +47,7 @@ export default class Search extends Component {
                     <button type="button" className="btn btn-primary btn-sm" ref='inPantry' onClick={this.handleFilterEvent}>Limit results to what I can make</button>
                     <button type="button" className="btn btn-default btn-sm" ref='quick' onClick={this.handleFilterEvent}>Quick Recipes</button>
                     <button type="button" className="btn btn-default btn-sm" ref='noMeat' onClick={this.handleFilterEvent}>I don't eat meat</button>
-                    <button type="button" className="btn btn-primary btn-lg btn-block" onClick={this.handleSuggestion}>Make a Suggestion</button>
+                    <button type="button" className="btn btn-primary btn-lg" onClick={this.handleSuggestion}>Make a Suggestion</button>
 
                 </div>
             </form>
