@@ -253,8 +253,10 @@ export default class App extends Component {
       return (
         <div id="App">
           <Header className='Header navbar-header ' userAuthFunc={this.verifyUser} hasUser={this.state.hasUser}/>
+          <div className="main">
           <Pantry items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
           <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} loading={this.state.isLoading}/>
+        </div>
           <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes}/>
         </div>
       );

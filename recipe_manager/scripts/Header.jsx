@@ -4,32 +4,7 @@ export default class Header extends Component {
 
     constructor(props) {
         super(props);
-        //Initial state of the app onLoa
-
-    }
-
-
-
-render() {
-        return (
-          <div className='navbar-header navbar navbar-lg' >
-          <div>
-            <a href="#" className="navbar-brand ">Recipe Manager</a>
-          </div>
-              <div className="navbar-form navbar-right">
-                <Login />
-      </div>
-    </div>
-
-        );
-    }
-}
-
-export class Login extends Component {
-
-    constructor(props) {
-        super(props);
-        //Initial state of the app onLoa
+        this.handleLoginEvent = this.handleLoginEvent.bind(this);
 
     }
 
@@ -47,19 +22,43 @@ export class Login extends Component {
         }
     }
 
+
+
+    // render() {
+    //         return (
+    //           <div className='navbar-header navbar navbar-lg' >
+    //           <div>
+    //             <a href="#" className="navbar-brand ">Recipe Manager</a>
+    //           </div>
+    //               <div className="navbar-form navbar-right">
+    //                 <Login />
+    //       </div>
+    //     </div>
+    //
+    //         );
+    //     }
+
     render() {
-        return(
-          <div className="form-group navbar-form ">
-            <form>
-              <input type="text"  name="username" ref='username' placeholder='Username'/>
-              <input type="text" name="passwd" ref='passwd' placeholder='Password'/>
-              <button
-                className="btn btn-block btn-lg btn-primary"
-                onClick={this.handleLoginEvent.bind(this)}>Logon</button>
-              </form>
+        return (
+            <div className="header">
+                <nav className="navbar navbar-default" role="navigation">
+                    <div className="navbar-header">
+                        <a className="navbar-brand" href="#">Recipe Manager</a>
+                    </div>
+                    <form className="navbar-form navbar-right" action="#" role="login">
+                        <div className="form-group">
+                            <div className="input-group form-control">
+                              <input type="text" name="username" ref='username' placeholder='Username'/>
+                              <input type="text" name="passwd" ref='passwd' placeholder='Password'/>
+                                <span className="input-group-btn">
+
+                                  <button className="btn btn-block btn-lg btn-primary" onClick={this.handleLoginEvent.bind(this)}>Logon</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </nav>
             </div>
-          );
-        }
-
-
+        );
+    }
 }
