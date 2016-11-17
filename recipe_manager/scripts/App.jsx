@@ -39,6 +39,7 @@ export default class App extends Component {
     this.verifyUser = this.verifyUser.bind(this);
     this.addUser = this.addUser.bind(this);
     this.getCurrentFilters = this.getCurrentFilters.bind(this);
+    this.sync = this.sync.bind(this);
 
   }
 
@@ -46,7 +47,15 @@ export default class App extends Component {
     //Update the loading state so the animation will show
     this.setState({isLoading: true});
 
-    this.setState({isLoading: false});
+    $.ajax({
+      url: '/search',
+      method: 'POST',
+      data: this.getCurrentFilters(),
+      success: function(data) {
+        this.setState({ recipes : data.recipes, isLoading: false });
+      }.bind(this)
+    });
+
   }
 
   /*
@@ -54,6 +63,34 @@ export default class App extends Component {
   * This was designed like this so API calls/validation to database backend can be
   * handled by the App component
   */
+
+  sync() {
+
+    //TODO:send item
+    this.setState({isLoading:true});
+    $.ajax({
+      url: '/sync',
+      method: 'POST',
+      data: {
+      },
+      success: function(data) {
+        console.log("returned data" + JSON.stringify(data));
+
+        console.log("right after ajax call");
+        //Create item
+        //Update State
+        this.setState({
+          pantry: data.pantry,
+          recipes: data.recipes,
+          isLoading: false
+        });
+
+      }.bind(this)});
+    }
+
+
+
+
 
   insertToPantry(name) {
     //Generate a string unique to the item by concating all fields into a string
@@ -105,6 +142,8 @@ export default class App extends Component {
     }
 
     editPantryItem(id, newName){
+      //TODO need to turn the textbox into an edittext 
+      console.log("main edit ran with " + id + newName);
       $.ajax({
         url: '/editPantryItem',
         method: 'POST',
@@ -267,7 +306,7 @@ export default class App extends Component {
           <Header className='Header navbar-header' addUserFunc={this.addUser} userAuthFunc={this.verifyUser} hasUser={this.state.hasUser} user={this.state.sessionKey}/>
           <div className="main">
             <Pantry items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
-            <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} filterFunc={this.filterRecipes} loading={this.state.isLoading}/>
+            <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} editFunc={this.editPantryItem} filterFunc={this.filterRecipes} loading={this.state.isLoading}/>
           </div>
           <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes} inPantry={this.state.inPantryFilter}  quick={this.state.quickFilter} noMeat={this.state.noMeatFilter}/>
         </div>
