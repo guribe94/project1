@@ -1,0 +1,32 @@
+
+
+.App{
+  height: 100%;
+  width: 80%;
+}
+
+.Header{
+  height: 5%;
+  width: 100%;
+
+}
+
+.Recipes{
+  height: 60%;
+  width: 80%;
+}
+
+.Panty{
+  height: 60%;
+  width: 80%;
+}
+
+.Search {
+
+}
+
+.login{
+
+  float:right;
+  display:inline;
+}

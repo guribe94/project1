@@ -18,7 +18,7 @@ Read about it online.
 import os
 from sqlalchemy import *
 from sqlalchemy.pool import NullPool
-from flask import Flask, request, render_template, g, redirect, Response
+from flask import Flask, request, render_template, g, redirect, Response, send_from_directory
 
 tmpl_dir = os.path.join(os.path.dirname(
     os.path.abspath(__file__)), 'templates')
@@ -183,10 +183,18 @@ def index():
 def send_js(path):
     return send_from_directory('js', path)
 
+@app.route('/css/<path:path>')
+def send_css(path):
+    return send_from_directory('css', path)
 
-@app.route('/images/<path:path>')
+
+@app.route('/img/<path:path>')
 def send_images(path):
-    return send_from_directory('images', path)
+    return send_from_directory('img', path)
+
+@app.route('/font/<path:path>')
+def send_fonts(path):
+    return send_from_directory('font', path)
 
 
 ######################## SINGLETON STORAGE FUNCTIONS  #########################
