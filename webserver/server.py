@@ -18,7 +18,7 @@ Read about it online.
 import os
 from sqlalchemy import *
 from sqlalchemy.pool import NullPool
-from flask import Flask, request, render_template, g, redirect, Response, send_from_directory
+from flask import Flask, request, render_template, g, jsonify, redirect, Response, send_from_directory
 
 tmpl_dir = os.path.join(os.path.dirname(
     os.path.abspath(__file__)), 'templates')
@@ -41,7 +41,7 @@ app = Flask(__name__, template_folder=tmpl_dir)
 # Swap out the URI below with the URI for the database created in part 2
 DATABASEURI = "postgresql://jnb2135:26mxk@104.196.175.120/postgres"
 
-pantryid=1
+
 #
 # This line creates a database engine that knows how to connect to the URI above
 #
@@ -84,6 +84,7 @@ def before_request():
 
   The variable g is globally accessible
   """
+  g.pantryid=18
   try:
     g.conn = engine.connect()
   except:
@@ -276,17 +277,22 @@ def addPantryItem():
   print "item", item
 
 
-  statement = ("""INSERT INTO pantry VALUES("""+pantryid+""","""+item+""");""")
-  try:
-	g.conn.execute(statement)
-  except:
-  	pantryid+=1
+  statement = ("""INSERT INTO pantry VALUES("""+str(g.pantryid)+""",'"""+str(item)+"""');""")
+  g.conn.execute(statement)
+  g.pantryid+=1
+ 
+  statement = ("""SELECT pantry.pid, ingredients.iid FROM pantry,ingredients WHERE ingredients.name=pantry.name AND ingredients.name='"""+item+"""';""")
+  cursor = g.conn.execute(statement)
 
-  statement = (""""SELECT * FROM pantry""");
+  for row in cursor:
+	statement = ("""INSERT INTO carries VALUES("""+str(row[0])+""","""+str(row[1])+""");""")
+  	g.conn.execute(statement)
+  
+  statement = ("""SELECT * FROM pantry;""");
   cursor=g.conn.execute(statement)
   li = []
   for row in cursor:
-  	li.append(row)
+  	li.append(dict(row))
 
   output = {'pantry':li}
   print output
@@ -315,8 +321,17 @@ def editPantryItem():
         print "new item", newItem
 
         # TODO:Make the DB Query
-	statement = ("""UPDATE pantry SET name="""+newItem+""" WHERE pid="""+itemID+""";""" )
+	statement = ("""UPDATE pantry SET name='"""+newItem+"""' WHERE pid="""+itemID+""";""" )
 	g.conn.execute(statement)
+
+	statement = ("""DELETE FROM carries WHERE pid="""+itemID+""";""")
+	g.conn.execute(statement)
+
+	statement = ("""SELECT pantry.pid, ingredients.iid FROM pantry,ingredients WHERE ingredients.name=pantry.name AND ingredients.name='"""+item+"""';""")
+  	cursor = g.conn.execute(statement)
+  	for row in cursor:
+        	statement = ("""INSERT INTO carries VALUES("""+str(row[0])+""","""+str(row[1])+""");""")
+        	g.conn.execute(statement)
 
 	statement = ("""SELECT * FROM pantry;""")
         cursor = g.conn.execute(statement)
