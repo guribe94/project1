@@ -190,7 +190,6 @@ export default class App extends Component {
         this.setState({inPantryFilter: filter.value});
       }
 
-      console.log("The current state is" + JSON.stringify(this.state));
     }
 
       // var currentFilters = this.getCurrentFilters();

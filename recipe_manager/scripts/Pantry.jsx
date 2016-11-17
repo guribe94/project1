@@ -99,7 +99,7 @@ export class PantryRow extends Component {
       <div className='PantryRow' >
       <p>Name: {this.props.name}</p>
       <button type="button" className="btn btn-default btn-sm"
-        onClick={this.handleFilterEvent}>Edit</button>
+        onClick={this.handleEditEvent}>Edit</button>
       <button
       className="btn btn-block btn-lg btn-danger"
       onClick={this.handleDeleteEvent}>Delete</button>

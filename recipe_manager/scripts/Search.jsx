@@ -62,7 +62,6 @@ export class Filter extends Component {
       event.stopPropagation(); // in case if send button would be ABOVE another button from the site
       //TODO: handle EVENT
       var filter = {filterName:this.props.filterName, value:!this.props.activated};
-      console.log("given filter" + JSON.stringify(filter));
       this.props.filterFunc(filter);
 
     }
