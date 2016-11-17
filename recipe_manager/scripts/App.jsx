@@ -43,7 +43,7 @@ export default class App extends Component {
 
   }
 
-  search(query) {
+  search() {
     //Update the loading state so the animation will show
     this.setState({isLoading: true});
 
@@ -87,8 +87,6 @@ export default class App extends Component {
 
       }.bind(this)});
     }
-
-
 
 
 

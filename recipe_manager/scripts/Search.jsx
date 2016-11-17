@@ -7,12 +7,11 @@ export default class Search extends Component {
   }
 
   handleSearchEvent(event) {
-    if (event.type === "click" || (event.keyCode && event.keyCode === 13)) {
+    if (event.type === "click") {
       // this.props.insertToPantry(name, amt);
-      var query = this.refs.query.value;
       event.preventDefault();
       event.stopPropagation(); // in case if send button would be ABOVE another button from the site
-      this.props.searchFunc(query);
+      this.props.searchFunc();
 
     }
   }
@@ -27,11 +26,6 @@ export default class Search extends Component {
     }
   }
 
-  handleSuggestion(event) {
-    this.props.searchFunc();
-  }
-
-
 
 
 
@@ -39,7 +33,7 @@ export default class Search extends Component {
     return (
       <form>
         <div id='filters'>
-          <button type="button" className="btn btn-primary btn-lg" onClick={this.handleSuggestion}>Make a Suggestion</button>
+          <button type="button" className="btn btn-primary btn-lg" onClick={this.handleSearchEvent}>Make a Suggestion</button>
         </div>
       </form>
     );
