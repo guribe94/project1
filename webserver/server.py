@@ -311,7 +311,6 @@ def editPantryItem():
         itemID = request.form["itemID"]
         newItem = request.form["item"]
 
-        print "username given", user
         print "password given", itemID
         print "new item", newItem
 
@@ -345,7 +344,7 @@ def deletePantryItem():
     if (request.method == "POST"):
         output = {}
         # JSON data from the POST request
-        user = request.form["username"]
+        # user = request.form["username]
         itemID = request.form["itemID"]
 
         print "username given", user
@@ -361,7 +360,8 @@ def deletePantryItem():
         for row in cursor:
               li.append(row)
 
-        output = {'pantry':li}
+        #Pantry items should be JSON {name, key}
+        output = {'success': True, 'pantry':li}
 
         # TODO:Make the DB Query
     # TODO: Get the new pantry and return it
