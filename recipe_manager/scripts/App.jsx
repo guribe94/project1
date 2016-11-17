@@ -97,7 +97,7 @@ export default class App extends Component {
       $.ajax({
         url: '/deletePantryItem',
         method: 'POST',
-        data: {},
+        data: { pid:id },
         success: function(data) {
           var response = {
             success: data.success,
@@ -113,7 +113,7 @@ export default class App extends Component {
       $.ajax({
         url: '/editPantryItem',
         method: 'POST',
-        data: {itemID:id, item:newName},
+        data: {pid:id, item:newName},
         success: function(data) {
           var response = {
             success: data.success,
