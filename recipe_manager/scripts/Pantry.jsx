@@ -79,7 +79,7 @@ export class PantryRow extends Component {
       console.log(this);
       console.log("click happened");
       event.preventDefault();
-
+      event.stopPropagation(); // in case if send button would be ABOVE another button from the site
       this.props.rmFunc(this.props.id);
     }
   }
@@ -89,6 +89,9 @@ export class PantryRow extends Component {
       console.log(this);
       console.log("click happened");
       event.preventDefault();
+      //Get the values from the textbox
+      var name = this.refs.name.value.trim();
+      console.log(name);
       this.props.editFunc(this.props.id);
     }
   }
@@ -98,8 +101,6 @@ export class PantryRow extends Component {
     return (
       <div className='PantryRow' >
       <p>Name: {this.props.name}</p>
-      <button type="button" className="btn btn-default btn-sm"
-        onClick={this.handleEditEvent}>Edit</button>
       <button
       className="btn btn-block btn-lg btn-danger"
       onClick={this.handleDeleteEvent}>Delete</button>

@@ -32,15 +32,18 @@ export default class Search extends Component {
   }
 
 
+
+  // <Filter type="button" className="btn btn-primary btn-sm" filterName='inPantryFilter' activated={this.props.inPantry} filterFunc={this.props.filterFunc} text='Limit results to what I can make' onClick={this.handleFilterEvent} />
+  // <Filter type="button" className="btn btn-default btn-sm" filterName='quickFilter' activated={this.props.quick} filterFunc={this.props.filterFunc} text='Quick Recipes' onClick={this.handleFilterEvent} />
+  // <Filter type="button" className="btn btn-default btn-sm" filterName='noMeatFilter' activated={this.props.noMeat} filterFunc={this.props.filterFunc} text='No Meat' onClick={this.handleFilterEvent} />
+
+
+
   render() {
     return (
       <form>
         <div id='filters'>
-          <Filter type="button" className="btn btn-primary btn-sm" filterName='inPantryFilter' activated={this.props.inPantry} filterFunc={this.props.filterFunc} text='Limit results to what I can make' onClick={this.handleFilterEvent} />
-          <Filter type="button" className="btn btn-default btn-sm" filterName='quickFilter' activated={this.props.quick} filterFunc={this.props.filterFunc} text='Quick Recipes' onClick={this.handleFilterEvent} />
-          <Filter type="button" className="btn btn-default btn-sm" filterName='noMeatFilter' activated={this.props.noMeat} filterFunc={this.props.filterFunc} text='No Meat' onClick={this.handleFilterEvent} />
           <button type="button" className="btn btn-primary btn-lg" onClick={this.handleSuggestion}>Make a Suggestion</button>
-
         </div>
       </form>
     );
