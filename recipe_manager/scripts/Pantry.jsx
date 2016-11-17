@@ -33,18 +33,18 @@ export class PantryInsert extends Component {
     if (event.type === "click" || (event.keyCode && event.keyCode === 13)) {
       //Get the values from the textboxes
       var name = this.refs.name.value.trim();
-      var amt = this.refs.quantity.value.trim();
+      // var amt = this.refs.quantity.value.trim();
       console.log(name);
-      console.log(amt);
+      // console.log(amt);
       // this.props.insertToPantry(name, amt);
       //Stop the normal form sending action (page reload, POST, etc)
       event.preventDefault();
       event.stopPropagation(); // in case if send button would be ABOVE another button from the site
       //Add the item to the pantry
-      this.props.addFunc(name, amt);
+      this.props.addFunc(name);
       //Reset the textboxes
       this.refs.name.value = '';
-      this.refs.quantity.value = '';
+      // this.refs.quantity.value = '';
     }
   }
 
@@ -53,12 +53,10 @@ export class PantryInsert extends Component {
   render() {
     return (
       <form>
-      Ingredient:
-      <input type="text" name="quantity" ref='name' />
-      <input type="text" name="name" ref='quantity'/>
+      <input type="text" className="form-control" name="name" ref='name' placeholder='Item'/>
 
       <button
-      className="btn btn-default"
+      className="btn btn-block btn-lg btn-primary"
       onClick={this.handleInsertEvent}>Add</button>
       </form>
     );
@@ -89,10 +87,9 @@ export class PantryRow extends Component {
   render() {
     return (
       <div className='PantryRow' >
-      <p>Quantity: {this.props.quantity}</p>
       <p>Name: {this.props.name}</p>
       <button
-      className="btn btn-default"
+      className="btn btn-block btn-lg btn-danger"
       onClick={this.handleDeleteEvent}>Delete</button>
 
       </div>
@@ -122,7 +119,7 @@ export class PantryList extends Component {
     var Items = this.props.items.map((data, index) => {
       return (
         //Generate a row for each item for the list
-        <PantryRow key={index} id={data.id} quantity={data.quantity} name={data.name} rmFunc={this.props.rmFunc} onRender={this.onRowRender} />
+        <PantryRow key={index} id={data.id} name={data.name} rmFunc={this.props.rmFunc} onRender={this.onRowRender} />
       )
     });
 

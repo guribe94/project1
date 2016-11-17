@@ -1,16 +1,28 @@
 import React, {Component} from 'react';
+import SearchInput, {createFilter} from 'react-search-input'
 
 var Loading = require('react-loading');
+
+
+
+
 
 export default class Recipes extends Component {
   constructor(props) {
     super(props);
+    this.state = {items:this.props.items, searchTerm: ''};
+    this.searchUpdated = this.searchUpdated.bind(this);
 
   }
 
+  searchUpdated (term) {
+     this.setState({searchTerm: term});
+   }
+
 
   render(){
-
+    var KEYS_TO_FILTERS = ['name'];
+    // var filtered = this.state.items.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS));
     if(this.props.loading){
       return(
         <Loading className='db_load_animation' type='bars' color='#e3e3e3' />
@@ -18,7 +30,7 @@ export default class Recipes extends Component {
     }
   else{
       // Loop through the list of items in the pantry
-      var Items = this.props.items.map((data) => {
+      var Items = this.state.items.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS)).map((data) => {
         return (
           //Generate a row for each item for the list
           <RecipeRow key={data.id} name={data.name} rmFunc={this.props.rmFunc} />
@@ -27,6 +39,7 @@ export default class Recipes extends Component {
       return (
         <div className='RecipeItems'>
           <div className="recipes_header">Recipes</div>
+         <SearchInput className="search-recipes form-control" onChange={this.searchUpdated.bind(this)} />
           {Items}
         </div>
       );
