@@ -207,22 +207,22 @@ export default class App extends Component {
       //TODO:Make call to DB
       var valid = false;
 
-      // $.ajax({
-      //   url: '/login',
-      //   method: 'POST',
-      //   data: {username: username, password: password},
-      //   success: function(data) {
-      //     var response = {success:data.success, sessionKey:data.sessionKey};
-      // if(response[success]){
-      //   this.setState(hasUser:true, sessionKey:sID);
-      // valid = true;
-      //
-      // }else{
-      //   this.setState(hasUser:false, sessionKey:null);
-      // valid = false;
-      // }
-      //   }.bind(this)
-      // });
+      $.ajax({
+        url: '/login',
+        method: 'POST',
+        data: {username: username, password: password},
+        success: function(data) {
+          var response = {success:data.success, sessionKey:data.sessionKey};
+          if(response.success){
+            this.setState({hasUser : true, sessionKey : response.sessionKey});
+            valid = true;
+
+          }else{
+            this.setState({hasUser:false, sessionKey:null});
+            valid = false;
+          }
+        }.bind(this)
+      });
       if (valid) {}
 
     }
@@ -238,11 +238,11 @@ export default class App extends Component {
           var response = {success:data.success, sessionKey:data.sessionKey};
           console.log("response" + response);
           if(response[success]){
-            this.setState(hasUser:true, sessionKey:data.sessionKey);
+            this.setState({hasUser:true, sessionKey:data.sessionKey});
             valid = true;
 
-          }else{
-            this.setState(hasUser:false, sessionKey:null);
+          } else {
+            this.setState({hasUser:false, sessionKey:null});
             valid = false;
           }
         }.bind(this)
@@ -252,7 +252,7 @@ export default class App extends Component {
     render() {
       return (
         <div id="App">
-          <Header className='Header' userAuthFunc={this.verifyUser} hasUser={this.state.hasUser}/>
+          <Header className='Header' userAuthFunc={this.verifyUser} hasUser={this.state.hasUser} />
           <Pantry className='Pantry' items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
           <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} loading={this.state.isLoading}/>
           <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes}/>

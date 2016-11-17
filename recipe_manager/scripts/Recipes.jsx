@@ -27,8 +27,7 @@ export default class Recipes extends Component {
       return(
         <Loading className='db_load_animation' type='bars' color='#e3e3e3' />
       );
-    }
-  else{
+    } else {
       // Loop through the list of items in the pantry
       var Items = this.state.items.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS)).map((data) => {
         return (
