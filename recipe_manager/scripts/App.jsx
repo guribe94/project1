@@ -59,10 +59,10 @@ export default class App extends Component {
         //Generate a string unique to the item by concating all fields into a string
         //then hashing it
         // var key = this.hash(name);
-
+        console.log(name);
         //TODO:send item
         $.ajax({
-            url: '/chat',
+            url: '/addPantryItem',
             method: 'POST',
             data: {
                 item: name
@@ -73,8 +73,10 @@ export default class App extends Component {
                     success: data.success,
                     id: data.itemID
             };
-        if (response.success === true) {
 
+        console.log("right after ajax call");
+        if (response.success === true) {
+            console.log("in");
             //Create item
             var pantryItem = {
                 name: name,
