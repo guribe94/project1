@@ -50,7 +50,7 @@ export default class App extends Component {
     $.ajax({
       url: '/search',
       method: 'POST',
-      data: this.getCurrentFilters(),
+      data: {},
       success: function(data) {
         this.setState({ recipes : data.recipes, isLoading: false });
       }.bind(this)
@@ -142,7 +142,7 @@ export default class App extends Component {
     }
 
     editPantryItem(id, newName){
-      //TODO need to turn the textbox into an edittext 
+      //TODO need to turn the textbox into an edittext
       console.log("main edit ran with " + id + newName);
       $.ajax({
         url: '/editPantryItem',
