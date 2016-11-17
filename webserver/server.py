@@ -410,6 +410,14 @@ def sync():
   # print name
   # cmd = 'INSERT INTO test(name) VALUES (:name1), (:name2)';
   # g.conn.execute(text(cmd), name1 = name, name2 = name);
+    statement = ("""SELECT * FROM recipes;""");
+    cursor=g.conn.execute(statement)
+    li = []
+    for row in cursor:
+    	 li.append(dict(row))
+    output = {'recipes':li}
+    print output
+    
     return jsonify(output)
 
 
@@ -425,14 +433,40 @@ def searchDatabase():
      # TODO: DO THE SEARCH
      if (request.method == "POST"):
          output = {}
+	 statement = ("""SELECT name FROM pantry;""")
+	 cursor1 = g.conn.execute(statement)
+	 
+	 pantry = []
+         for row in cursor1:
+	 	pantry.append(row[0])
+	 
+	 recipes = []	 
+	 statement = ("""SELECT rid FROM recipes;""")
+	 cursor1 = g.conn.execute(statement)
+	 for row in cursor1:
+		statement = ("""SELECT reid FROM contains WHERE rid ="""+row[0]+""";""")
+		cursor2 = g.conn.execute(statement)
+		ingredients = []
+		for row2 in cursor2:
+			statement = ("""SELECT name FROM contains,recipeingredients WHERE reid="""+row2[0]+""";""")
+			cursor3 = g.conn.execute(statement)
+ 			ingredients.append(cursor3.fetchone())
+		
+		if (set(ingredients)).issubset(set(pantry)):
+			statement = ("""SELECT name,directions FROM recipes WHERE rid="""+row[0]+""";""")
+			cursor4= g.conn.execute(statement)
+			recipes.append(dict(cursor4.fetchone()))
+		
 
+			
+	 output = {'recipes':recipes}				
          return jsonify(output)
 
 
 
 
 
-@app.route('/register')
+@app.route('/register', methods=['POST'])
 def register():
 
     if (request.method == "POST"):
@@ -448,7 +482,7 @@ def register():
             
 
         print "username given", username
-        print "password given", password
+        print "password given", passwd
 
         # TODO: Create the user
         statement = ("""SELECT username FROM users;""")
@@ -460,7 +494,7 @@ def register():
         
 	if success == True:
 		uid+=1
-		statement = ("""INSERT INTO users VALUES("""+str(uid)+""",'"""+username+"""','"""+password+""");""")
+		statement = ("""INSERT INTO users VALUES("""+str(uid)+""",'"""+username+"""','"""+passwd+""");""")
 		g.conn.execute(statement)
         
 	output["success"] = success
@@ -484,7 +518,7 @@ def register():
 
 
 
-@app.route('/login')
+@app.route('/login', methods=['POST'])
 def login():
 
     if (request.method == "POST"):
@@ -494,18 +528,20 @@ def login():
         passwd = request.form["password"]
 
         print "username given", username
-        print "password given", password
+        print "password given", passwd
+	
+        sys.stdout.flush()
 
-	statement = ("""SELECT username,password FROM users;""")
+	statement = ("""SELECT name,password FROM users;""")
         cursor = g.conn.execute(statement)
         success = False
         for row in cursor:
 		print username
                 print row[0]
-                print password
+                print passwd
                 print row[1]
 		sys.stdout.flush()
-                if row[0] == username and row[1] == password:
+                if row[0] == username and row[1] == passwd:
 			success=True
 
 
@@ -520,13 +556,13 @@ def login():
 
 
         # Store the user with the sessionkey
-        _init_store(session_id)
+        '''_init_store(session_id)
         global session_info
         try:
             session_info[session_id] = userid
         except:
             output["success"] = False
-            output["sessionKey"] = ''
+            output["sessionKey"] = '''''
 
 	output = {success:username}
         return jsonify(output)
