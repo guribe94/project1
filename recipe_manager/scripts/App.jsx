@@ -81,13 +81,13 @@ export default class App extends Component {
     }
 
     removeFromPantry(id) {
-      var items = this.state.pantry.filter(function(itm) {
-        //Return all elements that do not have the same id
-        return id !== itm.id;
-      });
-      //Update the state to no longer include the element being searched for
-      //If it doesn't exist, the list will not be changed
-      this.setState({pantry: items});
+      // var items = this.state.pantry.filter(function(itm) {
+      //   //Return all elements that do not have the same id
+      //   return id !== itm.id;
+      // });
+      // //Update the state to no longer include the element being searched for
+      // //If it doesn't exist, the list will not be changed
+      // this.setState({pantry: items});
       $.ajax({
         url: '/deletePantryItem',
         method: 'POST',

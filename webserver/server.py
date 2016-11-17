@@ -280,14 +280,14 @@ def addPantryItem():
   statement = ("""INSERT INTO pantry VALUES("""+str(g.pantryid)+""",'"""+str(item)+"""');""")
   g.conn.execute(statement)
   g.pantryid+=1
- 
+
   statement = ("""SELECT pantry.pid, ingredients.iid FROM pantry,ingredients WHERE ingredients.name=pantry.name AND ingredients.name='"""+item+"""';""")
   cursor = g.conn.execute(statement)
 
   for row in cursor:
 	statement = ("""INSERT INTO carries VALUES("""+str(row[0])+""","""+str(row[1])+""");""")
   	g.conn.execute(statement)
-  
+
   statement = ("""SELECT * FROM pantry;""");
   cursor=g.conn.execute(statement)
   li = []
@@ -360,9 +360,8 @@ def deletePantryItem():
         output = {}
         # JSON data from the POST request
         # user = request.form["username]
-        itemID = request.form["itemID"]
+        itemID = request.form["pid"]
 
-        print "username given", user
         print "itemID given", itemID
 
 	statement = ("""DELETE from pantry WHERE pid="""+itemID+""";""")
@@ -378,8 +377,6 @@ def deletePantryItem():
         #Pantry items should be JSON {name, key}
         output = {'success': True, 'pantry':li}
 
-        # TODO:Make the DB Query
-    # TODO: Get the new pantry and return it
 
     return jsonify(output)
 
