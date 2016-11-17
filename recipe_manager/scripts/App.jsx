@@ -18,17 +18,14 @@ export default class App extends Component {
         }, {
           name: "recipe2",
           id: "2"
-        }, {
-          name: "recipe3",
-          id: "3"
-        }, {
-          name: "recipe4",
-          id: "4"
         }
       ],
       isLoading: false,
       hasUser: false,
-      sessionKey: null
+      sessionKey: null,
+      quickFilter:false,
+      noMeatFilter:false,
+      onlyPantryFilter:false
     };
     //Bind all necessary functions
     this.insertToPantry = this.insertToPantry.bind(this);
@@ -41,6 +38,7 @@ export default class App extends Component {
     this.hash = this.hash.bind(this);
     this.verifyUser = this.verifyUser.bind(this);
     this.addUser = this.addUser.bind(this);
+    this.getCurrentFilters = this.getCurrentFilters.bind(this);
 
   }
 
@@ -74,10 +72,6 @@ export default class App extends Component {
 
         console.log("right after ajax call");
           //Create item
-          var pantryItem = {
-            name: name,
-            id: response.id
-          };
           //Update State
           this.setState({
             pantry: data.pantry
@@ -99,13 +93,14 @@ export default class App extends Component {
         method: 'POST',
         data: { pid:id },
         success: function(data) {
-          var response = {
-            success: data.success,
-            pantry: data.pantry
-          };
-          this.setState({ pantry : response.pantry });
+          // var response = {
+          //   success: data.success,
+          //   pantry: data.pantry
+          // };
+          this.setState({ pantry : data.pantry });
         }.bind(this)
       });
+      console.log("The current state is" + JSON.stringify(this.state));
 
     }
 
@@ -115,11 +110,7 @@ export default class App extends Component {
         method: 'POST',
         data: {pid:id, item:newName},
         success: function(data) {
-          var response = {
-            success: data.success,
-            pantry: data.pantry
-          };
-          this.setState({ pantry : response.pantry });
+          this.setState({ pantry : data.pantry });
         }.bind(this)
       });
 
@@ -186,6 +177,20 @@ export default class App extends Component {
 
     filterRecipes(filter) {
 
+      if(filter.filterName === 'quickFilter'){
+        this.setState({quickFilter: filter.value});
+      }
+
+      if(filter.filterName === 'noMeatFilter'){
+        this.setState({quickFilter: filter.value});
+      }
+
+      if(filter.filterName === 'inPantryFilter'){
+        this.setState({quickFilter: filter.value});
+      }
+
+      var currentFilters = this.getCurrentFilters();
+
       // $.ajax({
       //   url: '/chat',
       //   method: 'POST',
@@ -196,6 +201,10 @@ export default class App extends Component {
       //   }.bind(this)
       // });
 
+    }
+
+    getCurrentFilters(){
+      return {}
     }
 
     verifyUser(username, password) {
@@ -248,7 +257,7 @@ export default class App extends Component {
           <Header className='Header navbar-header ' addUserFunc={this.addUser} userAuthFunc={this.verifyUser} hasUser={this.state.hasUser} user={this.state.sessionKey}/>
           <div className="main">
           <Pantry items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
-          <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} loading={this.state.isLoading}/>
+          <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} filterFunc={this.filterRecipes} loading={this.state.isLoading}/>
         </div>
           <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes}/>
         </div>
