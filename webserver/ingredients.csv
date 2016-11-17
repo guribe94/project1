@@ -1,412 +1,415 @@
-iid,name,type
-1,baking powder,Baking
-2,butter,"Milk, Eggs, Other Dairy"
-3,cane sugar,Baking
-4,eggs,"Milk, Eggs, Other Dairy"
-5,flour,Baking
-6,milk,"Milk, Eggs, Other Dairy"
-7,sea salt,Spices and Seasonings
-8,chicken stock,Canned and Jarred
-9,chili peppers,Produce
-10,flour tortillas,Bakery/Bread
-11,greek yogurt,"Milk, Eggs, Other Dairy"
-12,ground cumin,Spices and Seasonings
-13,monterey jack cheese,Cheese
-14,salt,Spices and Seasonings
-15,scallions,Produce
-16,skim milk,"Milk, Eggs, Other Dairy"
-17,skinless boneless chicken breasts,Meat
-18,sour cream,"Milk, Eggs, Other Dairy"
-19,spinach,Produce
-20,tomatoes,Canned and Jarred
-21,file powder,Ethnic Foods
-22,bay leaf,Spices and Seasonings
-23,cardamom,Spices and Seasonings
-24,cashew nuts,Savory Snacks
-25,chili powder,Spices and Seasonings
-26,cinnamon stick,Spices and Seasonings
-27,fresh coriander leaves,Produce
-28,fried onions,Canned and Jarred
-29,ghee,Ethnic Foods
-30,ginger garlic paste,Ethnic Foods
-31,green cardamoms,Spices and Seasonings
-32,green chili,Produce
-33,mace,Spices and Seasonings
-34,mint leaves,Produce
-35,oil,"Oil, Vinegar, Salad Dressing"
-36,onions,Produce
-37,paneer,Ethnic Foods
-38,rice,Pasta and Rice
-39,rose water,Gourmet
-40,shahi jeera,Spices and Seasonings
-41,star anise,Spices and Seasonings
-42,turmeric,Spices and Seasonings
-43,yogurt,"Milk, Eggs, Other Dairy"
-44,active yeast,Baking
-45,coconut milk,"Milk, Eggs, Other Dairy"
-46,ground cardamom,Spices and Seasonings
-47,orange juice,Beverages
-48,orange zest,Produce
-49,powdered sugar,Baking
-50,sugar,Baking
-51,cantaloupe,Produce
-52,fresh chives,Produce
-53,prosciutto,Meat
-54,ricotta cheese,Cheese
-55,walnuts,Baking
-56,avocado,Produce
-57,canned black beans,Canned and Jarred
-58,canned tomatoes,Canned and Jarred
-59,garlic,Produce
-60,jalapeno,Produce
-61,lean ground beef,Meat
-62,onion,Produce
-63,quinoa,Health Foods
-64,whole kernel corn,Produce
-65,baby carrots,Produce
-66,fontina cheese,Cheese
-67,fusilli pasta,Pasta and Rice
-68,garlic cloves,Produce
-69,heavy whipping cream,"Milk, Eggs, Other Dairy"
-70,olive oil,"Oil, Vinegar, Salad Dressing"
-71,parmesan cheese,Cheese
-72,pepper,Spices and Seasonings
-73,yellow summer squash,Produce
-74,yellow sweet peppers,Produce
-75,zucchini,Produce
-76,ground mustard,Spices and Seasonings
-77,lemon wedges,Produce
-78,maple syrup,Cereal
-79,pecans,Baking
-80,salmon fillets,Seafood
-81,worcestershire sauce,Condiments
-82,blue cheese,Cheese
-83,grape tomatoes,Produce
-84,hard-boiled eggs,"Milk, Eggs, Other Dairy"
-85,mixed salad greens,Produce
-86,skinless boneless chicken breast,Meat
-87,thick-cut bacon,Meat
-88,allspice,Spices and Seasonings
-89,chuck roast,Meat
-90,cucumber,Produce
-91,cumin,Spices and Seasonings
-92,dried mint,Spices and Seasonings
-93,ground pepper,Spices and Seasonings
-94,jalepeno,Produce
-95,pita bread,Bakery/Bread
-96,whole garlic,Produce
-97,almonds,Nuts
-98,arugula,Produce
-99,carrots,Produce
-100,dried cranberries,Dried Fruits
-101,goat cheese,Cheese
-102,red wine vinegar,"Oil, Vinegar, Salad Dressing"
-103,salt and pepper,Spices and Seasonings
-104,almond extract,Baking
-105,blueberry jam,"Nut butters, Jams, and Honey"
-106,cream cheese,Cheese
-107,crescent rolls,Refrigerated
-108,egg,"Milk, Eggs, Other Dairy"
-109,turbinado sugar,Baking
-110,barbecue sauce,Condiments
-111,big shells,Pasta and Rice
-112,black pepper,Spices and Seasonings
-113,chicken breast,Meat
-114,garlic powder,Spices and Seasonings
-115,onion salt,Spices and Seasonings
-116,paprika,Spices and Seasonings
-117,wheat beer,Alcoholic Beverages
-118,agave syrup,Ethnic Foods
-119,bananas,Produce
-120,coconut meat,Produce
-121,lite coconut milk,Canned and Jarred
-122,unsweetened shredded coconut,Baking
-123,brown rice,Pasta and Rice
-124,brown rice syrup,Health Foods
-125,coarse sea salt,Spices and Seasonings
-126,dark chocolate,Sweet Snacks
-127,heavy cream,"Milk, Eggs, Other Dairy"
-128,peanut butter,"Nut butters, Jams, and Honey"
-129,vanilla,Baking
-130,dry mustard,Spices and Seasonings
-131,green onions,Produce
-132,vegetable oil,"Oil, Vinegar, Salad Dressing"
-133,lentils,Canned and Jarred
-134,okra,Produce
-135,red potatoes,Produce
-136,sugar snap peas,Produce
-137,vegetable stock,Canned and Jarred
-138,cocoa,Baking
-139,baking soda,Baking
-140,all purpose flour,Baking
-141,coffee,Tea and Coffee
-142,icing sugar,Baking
-143,raspberry jam,"Nut butters, Jams, and Honey"
-144,semisweet chocolate,Sweet Snacks
-145,unsalted butter,"Milk, Eggs, Other Dairy"
-146,unsweetened cocoa powder,Baking
-147,vanilla extract,Baking
-148,baguette,Bakery/Bread
-149,basil leaves,Produce
-150,hummus,Refrigerated
-151,lemon juice,Produce
-152,pesto,Pasta and Rice
-153,tuna in olive oil,Canned and Jarred
-154,tray,?
-155,brown sugar,Baking
-156,molasses,Baking
-157,semi sweet chocolate chips,Baking
-158,white sugar,Baking
-159,chicken broth,Canned and Jarred
-160,chipotle chiles in adobo,Canned and Jarred
-161,lime,Produce
-162,shredded cheese,Cheese
-163,skinless boneless chicken breast halves,Meat
-164,tortilla chips,Savory Snacks
-165,white onion,Produce
-166,apple cider vinegar,"Oil, Vinegar, Salad Dressing"
-167,cayenne pepper,Spices and Seasonings
-168,chicken wings,Meat
-169,hot sauce,Condiments
-170,ketchup,Condiments
-171,kosher salt,Spices and Seasonings
-172,bbq sauce,Condiments
-173,sweet onion,Produce
-174,tomato paste,Pasta and Rice
-175,whiskey,Alcoholic Beverages
-176,extra virgin olive oil,"Oil, Vinegar, Salad Dressing"
-177,fire-roasted tomatoes,Canned and Jarred
-178,greens,Produce
-179,jam,"Nut butters, Jams, and Honey"
-180,sherry vinegar,"Oil, Vinegar, Salad Dressing"
-181,lardo,?
-182,crab meat,Seafood
-183,creole seasoning,Spices and Seasonings
-184,ranch dressing mix,"Oil, Vinegar, Salad Dressing"
-185,salad mix,Produce
-186,shrimp,Seafood
-187,boneless pork chops,Meat
-188,breadcrumbs,Bakery/Bread
-189,dijon mustard,Condiments
-190,frozen spinach,Frozen
-191,white wine,Alcoholic Beverages
-192,chicken,Meat
-193,cilantro,Produce
-194,corn,Produce
-195,feta cheese,Cheese
-196,taco shells,Pasta and Rice
-197,apple juice,Beverages
-198,apples,Produce
-199,cheddar,Cheese
-200,ham,Meat
-201,thyme,Produce
-202,balsamic vinegar,"Oil, Vinegar, Salad Dressing"
-203,beef,Frozen
-204,red onion,Produce
-205,rolls,Bakery/Bread
-206,sharp cheddar cheese,Cheese
-207,portobello mushrooms,Produce
-208,buttermilk biscuits,Frozen
-209,dried basil,Spices and Seasonings
-210,dried oregano,Spices and Seasonings
-211,garlic salt,Spices and Seasonings
-212,mayonnaise,Condiments
-213,apple,Produce
-214,schnapps,Alcoholic Beverages
-215,vodka,Alcoholic Beverages
-216,coarse salt,Spices and Seasonings
-217,cracked pepper,Spices and Seasonings
-218,juice of lemon,Produce
-219,marjoram,Spices and Seasonings
-220,sardines,Canned and Jarred
-221,baby spinach,Produce
-222,chicken sausage,Meat
-223,pine nuts,Baking
-224,whole wheat couscous,Pasta and Rice
-225,kale,Produce
-226,5 spice powder,Spices and Seasonings
-227,canola oil,"Oil, Vinegar, Salad Dressing"
-228,clementines,Produce
-229,fresh cilantro leaves,Produce
-230,peppercorns,Spices and Seasonings
-231,scallion greens,Produce
-232,sesame oil,Ethnic Foods
-233,skinless bone-in chicken thighs,Meat
-234,alfredo pasta sauce,Pasta and Rice
-235,broccoli florets,Produce
-236,cooked chicken,Meat
-237,dried basil leaves,Spices and Seasonings
-238,fresh mushrooms,Produce
-239,bittersweet chocolate,Sweet Snacks
-240,cherries,Produce
-241,granulated sugar,Baking
-242,long-grain rice,Pasta and Rice
-243,sharp cheddar,Cheese
-244,celery,Produce
-245,chicken breasts,Meat
-246,cornstarch,Baking
-247,half & half,"Milk, Eggs, Other Dairy"
-248,orzo,Pasta and Rice
-249,water,Beverages
-250,diced carrots,?
-251,cranberries,Produce
-252,garlic herb spreadable cheese,Cheese
-253,ground cinnamon,Spices and Seasonings
-254,honey,"Nut butters, Jams, and Honey"
-255,bread,Bakery/Bread
-256,semisweet chocolate chips,Baking
-257,banana,Produce
-258,ice cubes,Frozen
-259,juice of lime,Produce
-260,light coconut milk,Canned and Jarred
-261,pineapple,Produce
-262,shredded coconut,Baking
-263,granny smith apples,Produce
-264,anchovy,Seafood
-265,chile,Produce
-266,french fries,Frozen
-267,fresh cilantro,Produce
-268,fresh oregano,Produce
-269,fresh parsley,Produce
-270,garlic clove,Produce
-271,ground coriander,Spices and Seasonings
-272,lobster tails,Seafood
-273,ribeye steaks,Meat
-274,roasted garlic,Produce
-275,shallot,Produce
-276,asian fish sauce,Ethnic Foods
-277,lettuce leaves,Produce
-278,lime juice,Produce
-279,mint,Produce
-280,shiitake mushrooms,Produce
-281,soy sauce,Ethnic Foods
-282,thai chiles,Produce
-283,tofu,Produce
-284,plum sauce,Ethnic Foods
-285,rice wine vinegar,Ethnic Foods
-286,sherry wine,Alcoholic Beverages
-287,skinless boneless chicken thighs,Meat
-288,angel food cake,Bakery/Bread
-289,strawberries,Produce
-290,vanilla ice cream,Frozen
-291,oats,Cereal
-292,sweet potato,Produce
-293,unsweetened coconut,Baking
-294,stevia drops,Baking
-295,candy cane,Sweet Snacks
-296,espresso,Tea and Coffee
-297,ice,Frozen
-298,kahlua mocha,Alcoholic Beverages
-299,fresh thyme,Produce
-300,grapeseed oil,"Oil, Vinegar, Salad Dressing"
-301,whole egg,"Milk, Eggs, Other Dairy"
-302,artichoke hearts,Canned and Jarred
-303,Salt & Pepper,Spices and Seasonings
-304,raw honey,"Nut butters, Jams, and Honey"
-305,bean sprouts,Ethnic Foods
-306,green onion,Produce
-307,jalapenos,Produce
-308,lemongrass,Produce
-309,ramen noodles,Pasta and Rice
-310,grits,Baking
-311,red bell pepper,Produce
-312,yellow squash,Produce
-313,cherry tomatoes,Produce
-314,chives,Produce
-315,crushed red pepper,Spices and Seasonings
-316,ground pork sausage,Meat
-317,penne pasta,Pasta and Rice
-318,tomato puree,Canned and Jarred
-319,white mushrooms,Produce
-320,crispy rice cereal,Cereal
-321,marshmallows,Baking
-322,beans,Canned and Jarred
-323,baby corn,Produce
-324,nori,Ethnic Foods
-325,sushi rice,Pasta and Rice
-326,unseasoned rice vinegar,Ethnic Foods
-327,bacon rashers,Meat
-328,crusty bread,Bakery/Bread
-329,rapeseed oil,"Oil, Vinegar, Salad Dressing"
-330,watercress,Produce
-331,wholegrain mustard,Condiments
-332,barley,Health Foods
-333,beef base,Canned and Jarred
-334,lamb stew meat,Meat
-335,potato,Produce
-336,fresh fruit,Canned and Jarred
-337,mayo,Condiments
-338,mushrooms,Produce
-339,mrs dash,?
-340,cinnamon,Spices and Seasonings
-341,crisco,"Oil, Vinegar, Salad Dressing"
-342,ground nutmeg,Spices and Seasonings
-343,creamy peanut butter,"Nut butters, Jams, and Honey"
-344,ground ginger,Spices and Seasonings
-345,reduced sodium soy sauce,Condiments
-346,roasted peanuts,Nuts
-347,sesame seeds,Spices and Seasonings
-348,spaghetti,Pasta and Rice
-349,sriracha,Condiments
-350,stir fry vegetables,Frozen
-351,arrowroot powder,Baking
-352,bacon,Meat
-353,bacon fat,Meat
-354,black eyed peas,Canned and Jarred
-355,collard greens,Produce
-356,garnet yam,Produce
-357,smoked paprika,Spices and Seasonings
-358,unrefined sea salt,Gourmet
-359,yellow onion,Produce
-360,corn syrup,Baking
-361,peanut butter chips,Baking
-362,peanuts,Savory Snacks
-363,rice krispies cereal,Cereal
-364,yellow cake mix,Baking
-365,cauliflower,Produce
-366,fresh peas,Produce
-367,capers,Canned and Jarred
-368,country bread,Bakery/Bread
-369,flat-leaf parsley,Produce
-370,juice of orange,Beverages
-371,pimento stuffed olives,Canned and Jarred
-372,alfalfa sprouts,Produce
-373,ground beef,Meat
-374,hawaiian sweet rolls,Bakery/Bread
-375,pickled okra,Produce
-376,sausage links,Meat
-377,stone ground mustard,Condiments
-378,buttermilk,"Milk, Eggs, Other Dairy"
-379,corn kernels,Produce
-380,cornmeal,Ethnic Foods
-381,bouillon,Canned and Jarred
-382,cabbage,Produce
-383,ginger,Produce
-384,ground pork,Meat
-385,wonton wrappers,Ethnic Foods
-386,pumpkin pie spice,Spices and Seasonings
-387,pumpkin seeds,Savory Snacks
-388,curry powder,Ethnic Foods
-389,dry white wine,Alcoholic Beverages
-390,fresh tarragon,Spices and Seasonings
-391,sweet paprika,Spices and Seasonings
-392,steaks,Meat
-393,instant lemon pudding mix,Baking
-394,lemon cake mix,Baking
-395,lemonade concentrate,Frozen
-396,chocolate chips,Baking
-397,mango,Produce
-398,gelatin,Baking
-399,popped popcorn,Savory Snacks
-400,candy canes,Sweet Snacks
-401,cocoa powder,Baking
-402,peppermint extract,Baking
-403,bread crumbs,Bakery/Bread
-404,quick cooking barley,Health Foods
-405,shredded cheddar cheese,Cheese
-406,chipotle chilis in adobo,Canned and Jarred
-407,cider vinegar,"Oil, Vinegar, Salad Dressing"
-408,cilantro leaves,Produce
-409,corn tortillas,Pasta and Rice
-410,flank steak,Meat
-411,radishes,Produce
+id,name,type
+20,almond extract,Baking
+21,baking soda,Baking
+22,corn starch,Baking
+23,egg,"Milk, Eggs, Other Dairy"
+24,flour,Baking
+25,granulated sugar,Baking
+26,imitation vanilla extract,Baking
+27,salt,Spices and Seasonings
+28,sprinkles,Baking
+29,unsalted butter,"Milk, Eggs, Other Dairy"
+30,dijon mustard,Condiments
+31,fresh dill,Produce
+32,garlic cloves,Produce
+33,green onions,Produce
+34,lime juice,Produce
+35,mayonnaise,Condiments
+36,pepper,Spices and Seasonings
+37,red onion,Produce
+38,red potatoes,Produce
+39,asparagus,Produce
+40,blueberries,Produce
+41,cider vinegar,"Oil, Vinegar, Salad Dressing"
+42,feta,Cheese
+43,fresh basil,Produce
+44,honey,"Nut butters, Jams, and Honey"
+45,lemon juice,Produce
+46,olive oil,"Oil, Vinegar, Salad Dressing"
+47,pecans,Baking
+48,red bell pepper,Produce
+49,rice,Pasta and Rice
+50,strawberries,Produce
+51,almonds,Nuts
+52,baby peas,Produce
+53,canned butter beans,Canned and Jarred
+54,canned tomatoes,Canned and Jarred
+55,couscous,Ethnic Foods
+56,cumin seeds,Spices and Seasonings
+57,ground cinnamon,Spices and Seasonings
+58,harissa,Ethnic Foods
+59,lemon zest,Produce
+60,non fat natural yogurt,"Milk, Eggs, Other Dairy"
+61,onion,Produce
+62,rapeseed oil,"Oil, Vinegar, Salad Dressing"
+63,vegetable stock,Canned and Jarred
+64,coconut butter,Health Foods
+65,coconut oil,Baking
+66,dark chocolate chips,Baking
+67,liquid smoke,Spices and Seasonings
+68,sunflower seed butter,"Nut butters, Jams, and Honey"
+69,unsweetened cocoa powder,Baking
+70,carrots,Produce
+71,chili-garlic sauce,Ethnic Foods
+72,cooked brown rice,Pasta and Rice
+73,cucumbers,Produce
+74,eggs,"Milk, Eggs, Other Dairy"
+75,fresh ginger,Produce
+76,garlic,Produce
+77,kimchi,Ethnic Foods
+78,low sodium soy sauce,Condiments
+79,mung bean sprouts,Ethnic Foods
+80,rice vinegar,Ethnic Foods
+81,sesame oil,Ethnic Foods
+82,sesame seeds,Spices and Seasonings
+83,shiitake mushrooms,Produce
+84,bbq sauce,Condiments
+85,sweet potato,Produce
+86,breadcrumbs,Bakery/Bread
+87,carrot,Produce
+88,corn syrup,Baking
+89,currants,Dried Fruits
+90,juice of lemon,Produce
+91,light brown sugar,Baking
+92,mixed peel,Baking
+93,raisins,Produce
+94,self-raising flour,Baking
+95,stout,Alcoholic Beverages
+96,suet,Meat
+97,sultanas,Baking
+98,almond meal,Baking
+99,baking powder,Baking
+100,lemon,Produce
+101,lemon curd,"Nut butters, Jams, and Honey"
+102,sour cream,"Milk, Eggs, Other Dairy"
+103,vanilla extract,Baking
+104,champagne,Alcoholic Beverages
+105,coarse salt,Spices and Seasonings
+106,cointreau,Alcoholic Beverages
+107,lime,Produce
+108,lime zest,Produce
+109,silver tequila,Alcoholic Beverages
+110,superfine sugar,Gourmet
+111,celery seeds,Spices and Seasonings
+112,dried onion,Spices and Seasonings
+113,instant yeast,Baking
+114,sharp cheddar cheese,Cheese
+115,shortening,"Oil, Vinegar, Salad Dressing"
+116,water,Beverages
+117,whole milk,"Milk, Eggs, Other Dairy"
+118,ancho chile powder,Spices and Seasonings
+119,cumin,Spices and Seasonings
+120,kosher salt,Spices and Seasonings
+121,sage,Spices and Seasonings
+122,squash,Produce
+123,black pepper,Spices and Seasonings
+124,cayenne pepper,Spices and Seasonings
+125,cream cheese,Cheese
+126,green chilies,Produce
+127,grits,Baking
+128,monterey jack cheese,Cheese
+129,paprika,Spices and Seasonings
+130,whole egg,"Milk, Eggs, Other Dairy"
+131,jalapeno,Produce
+132,juice of lime,Produce
+133,plum tomatoes,Produce
+134,sea-salt,Spices and Seasonings
+135,shallot,Produce
+136,tomatillos,Produce
+137,all purpose flour,Baking
+138,beef broth,Canned and Jarred
+139,corn meal,Ethnic Foods
+140,fresh cilantro,Produce
+141,garlic clove,Produce
+142,ground beef,Meat
+143,ground cumin,Spices and Seasonings
+144,ground pork,Meat
+145,meatballs,Meat
+146,salt and pepper,Spices and Seasonings
+147,scallion,Produce
+148,banana,Produce
+149,chia seeds,Health Foods
+150,maple syrup,Cereal
+151,milk,"Milk, Eggs, Other Dairy"
+152,avocados,Produce
+153,canned black beans,Canned and Jarred
+154,canned green chiles,Canned and Jarred
+155,cilantro,Produce
+156,onions,Produce
+157,plantains,Produce
+158,poblano peppers,Produce
+159,vegetable oil,"Oil, Vinegar, Salad Dressing"
+160,corn,Produce
+161,guacamole,Refrigerated
+162,lettuce,Produce
+163,refried beans,Canned and Jarred
+164,salsa,Pasta and Rice
+165,broccoli,Produce
+166,cheddar cheese,Cheese
+167,cream of mushroom soup,Canned and Jarred
+168,evaporated milk,Baking
+169,brown sugar,Baking
+170,cabbage,Produce
+171,ketchup,Condiments
+172,soba noodles,Ethnic Foods
+173,soy sauce,Ethnic Foods
+174,turkey,Meat
+175,worcestershire sauce,Condiments
+176,chocolate chips,Baking
+177,egg whites,"Milk, Eggs, Other Dairy"
+178,nonfat greek yogurt,"Milk, Eggs, Other Dairy"
+179,old-fashioned oats,Cereal
+180,skim milk,"Milk, Eggs, Other Dairy"
+181,defrosted from,?
+182,basil leaves,Produce
+183,heavy cream,"Milk, Eggs, Other Dairy"
+184,italian sausage,Meat
+185,parmesan cheese,Cheese
+186,red pepper flakes,Spices and Seasonings
+187,shredded mozzarella cheese,Cheese
+188,ziti pasta,Pasta and Rice
+189,cinnamon,Spices and Seasonings
+190,coconut flour,Gluten Free
+191,ground flax seed,Baking
+192,liquid stevia,Baking
+193,sea salt,Spices and Seasonings
+194,dried dill weed,Spices and Seasonings
+195,fresh parsley,Produce
+196,ground pepper,Spices and Seasonings
+197,hamburger buns,Bakery/Bread
+198,panko bread crumbs,Bakery/Bread
+199,salmon,Seafood
+200,seasoned bread crumbs,Bakery/Bread
+201,sweet pickle relish,Condiments
+202,regular,?
+203,bay leaf,Spices and Seasonings
+204,butter,"Milk, Eggs, Other Dairy"
+205,canned cannellini beans,Canned and Jarred
+206,chicken broth,Canned and Jarred
+207,napa cabbage,Produce
+208,oregano,Spices and Seasonings
+209,potato,Produce
+210,thyme,Produce
+211,tomato paste,Pasta and Rice
+212,yellow onion,Produce
+213,slivered almonds,Baking
+214,sugar,Baking
+215,sweetened shredded coconut,Baking
+216,arugula leaves,Produce
+217,bread,Bakery/Bread
+218,peanut butter,"Nut butters, Jams, and Honey"
+219,bacon grease,Meat
+220,beer,Alcoholic Beverages
+221,thick-cut bacon,Meat
+222,cashews,Savory Snacks
+223,coconut cream,Health Foods
+224,extra-virgin coconut oil,Baking
+225,unsweetened shredded coconut,Baking
+226,oil,"Oil, Vinegar, Salad Dressing"
+227,water chestnuts,Ethnic Foods
+228,wonton wrappers,Ethnic Foods
+229,longganisa,?
+230,basil,Produce
+231,cracked pepper,Spices and Seasonings
+232,penne pasta,Pasta and Rice
+233,sausage,Meat
+234,spinach,Produce
+235,apple,Produce
+236,brie,Cheese
+237,crackers,Savory Snacks
+238,kahlua,Alcoholic Beverages
+239,walnuts,Baking
+240,apple cider vinegar,"Oil, Vinegar, Salad Dressing"
+241,beetroot,Produce
+242,mint,Produce
+243,Salt & Pepper,Spices and Seasonings
+244,apples,Produce
+245,buttermilk,"Milk, Eggs, Other Dairy"
+246,caramel sauce,Frozen
+247,ground nutmeg,Spices and Seasonings
+248,butternut squash,Produce
+249,light coconut milk,Canned and Jarred
+250,limes,Produce
+251,peanuts,Savory Snacks
+252,red curry paste,Ethnic Foods
+253,ice,Frozen
+254,tequila,Alcoholic Beverages
+255,triple sec,Alcoholic Beverages
+256,fresh ginger root,Produce
+257,green onion,Produce
+258,tuna steaks,Seafood
+259,low fat ricotta cheese,Cheese
+260,turbinado sugar,Baking
+261,chicken breasts,Meat
+262,fennel seeds,Spices and Seasonings
+263,cavatelli pasta,Pasta and Rice
+264,extra virgin olive oil,"Oil, Vinegar, Salad Dressing"
+265,fresh mint leaves,Produce
+266,fresh parsley leaves,Produce
+267,parmigiano reggiano,Cheese
+268,dark brown sugar,Baking
+269,orange zest,Produce
+270,peaches,Produce
+271,vanilla,Baking
+272,whipped cream,"Milk, Eggs, Other Dairy"
+273,beef chuck roast,Meat
+274,bread crumbs,Bakery/Bread
+275,canned mushrooms,Canned and Jarred
+276,celery,Produce
+277,condensed tomato soup,Canned and Jarred
+278,dried basil,Spices and Seasonings
+279,quick cooking tapioca,Baking
+280,erythritol,Health Foods
+281,zucchini,Produce
+282,coffee,Tea and Coffee
+283,full-fat coconut milk,"Milk, Eggs, Other Dairy"
+284,instant coffee,Tea and Coffee
+285,strong brewed coffee,Tea and Coffee
+286,broccoli crowns,Produce
+287,dry mustard,Spices and Seasonings
+288,nutmeg,Spices and Seasonings
+289,vegetable broth,Canned and Jarred
+290,whole wheat flour,Baking
+291,butterscotch pudding mix,Baking
+292,canola oil,"Oil, Vinegar, Salad Dressing"
+293,instant vanilla pudding mix,Baking
+294,avocado,Produce
+295,salmon fillet,Seafood
+296,taco seasoning,Spices and Seasonings
+297,tomatoes,Canned and Jarred
+298,canned corn,Canned and Jarred
+299,chicken tenders,Meat
+300,chili powder,Spices and Seasonings
+301,tortillas,Ethnic Foods
+302,bell peppers,Produce
+303,tomato sauce,Pasta and Rice
+304,dried thyme,Spices and Seasonings
+305,fat of choice,"Oil, Vinegar, Salad Dressing"
+306,garlic powder,Spices and Seasonings
+307,onion powder,Spices and Seasonings
+308,whole eggs,"Milk, Eggs, Other Dairy"
+309,jam,"Nut butters, Jams, and Honey"
+310,curry powder,Ethnic Foods
+311,kale,Produce
+312,lemon pepper seasoning,Spices and Seasonings
+313,turmeric,Spices and Seasonings
+314,meyer lemon,Produce
+315,plain greek yogurt,"Milk, Eggs, Other Dairy"
+316,poppy seeds,Baking
+317,bacon,Meat
+318,chicken stock,Canned and Jarred
+319,chile pepper,Produce
+320,egg yolks,"Milk, Eggs, Other Dairy"
+321,fettuccine,Pasta and Rice
+322,fresh flat-leaf parsley,Produce
+323,fresh thyme,Produce
+324,parmigiano reggiano cheese,Cheese
+325,pecorino romano cheese,Cheese
+326,scallions,Produce
+327,half and half,"Milk, Eggs, Other Dairy"
+328,scallops,Seafood
+329,shredded cheddar cheese,Cheese
+330,bacon rashers,Meat
+331,cucumber,Produce
+332,pack cheese,?
+333,elbow macaroni,Pasta and Rice
+334,flat-leaf parsley,Produce
+335,fontina cheese,Cheese
+336,panko breadcrumbs,Bakery/Bread
+337,truffle mushrooms,Gourmet
+338,chocolate,Sweet Snacks
+339,cocoa powder,Baking
+340,confectioners sugar,Baking
+341,creamy peanut butter,"Nut butters, Jams, and Honey"
+342,ice cream,Frozen
+343,semisweet chocolate chips,Baking
+344,unbleached flour,Baking
+345,green bell pepper,Produce
+346,low sodium chicken broth,Canned and Jarred
+347,pork loin chops,Meat
+348,cornstarch,Baking
+349,french fried onions,Canned and Jarred
+350,green beans,Produce
+351,white mushrooms,Produce
+352,baking chocolate,Baking
+353,brownie mix,Baking
+354,chocolate frosting,Baking
+355,oreo cookie,Sweet Snacks
+356,dried cranberries,Dried Fruits
+357,pepitas,Savory Snacks
+358,pumpkin pie spice,Spices and Seasonings
+359,rye flour,Health Foods
+360,yeast,Baking
+361,neutral- tasting oil,?
+362,half n half cream,"Milk, Eggs, Other Dairy"
+363,corn oil,"Oil, Vinegar, Salad Dressing"
+364,okra,Produce
+365,tomato,Canned and Jarred
+366,white sugar,Baking
+367,white vinegar,"Oil, Vinegar, Salad Dressing"
+368,angel food cake,Bakery/Bread
+369,apricots,Produce
+370,cherries,Produce
+371,juice of orange,Beverages
+372,nectarine,Produce
+373,nonfat cool whip,"Milk, Eggs, Other Dairy"
+374,plum,Produce
+375,bok choy,Produce
+376,broccolini,Produce
+377,cooking oil,"Oil, Vinegar, Salad Dressing"
+378,hokkien noodles,Ethnic Foods
+379,spring onions,Produce
+380,tofu,Produce
+381,TSP,Health Foods
+382,balsamic vinegar,"Oil, Vinegar, Salad Dressing"
+383,french bread,Bakery/Bread
+384,low fat swiss cheese,Cheese
+385,sweet onions,Produce
+386,bay leaves,Spices and Seasonings
+387,ham,Meat
+388,lamb rib chops,Meat
+389,port,Alcoholic Beverages
+390,red wine vinegar,"Oil, Vinegar, Salad Dressing"
+391,ground cardamom,Spices and Seasonings
+392,ground coriander,Spices and Seasonings
+393,pomegranate seeds,Produce
+394,rose wine,Alcoholic Beverages
+395,winter squash,Produce
+396,breakfast sausage,Meat
+397,canned great northern beans,Canned and Jarred
+398,dried oregano,Spices and Seasonings
+399,dried rosemary,Spices and Seasonings
+400,beans,Canned and Jarred
+401,coriander,Spices and Seasonings
+402,corn tortillas,Pasta and Rice
+403,fresh corn kernels,Produce
+404,roasted red pepper,Canned and Jarred
+405,salsa verde,Pasta and Rice
+406,smoked paprika,Spices and Seasonings
+407,carrot juice,Beverages
+408,mirin,Ethnic Foods
+409,orange juice,Beverages
+410,safflower oil,"Oil, Vinegar, Salad Dressing"
+411,white distilled vinegar,"Oil, Vinegar, Salad Dressing"
+412,white miso,Ethnic Foods
+413,yellowfin tuna,Seafood
+414,cream,"Milk, Eggs, Other Dairy"
+415,extra lean ground beef,Meat
+416,flour tortillas,Bakery/Bread
+417,romaine lettuce,Produce
+418,vanilla essence,Baking
+419,cauliflower florets,Produce
+420,beef,Frozen
+421,beef stock,Canned and Jarred
+422,cornflour,Baking
+423,thyme sprigs,Produce
+424,blackberries,Produce
+425,rolled oats,Cereal
+426,burger buns,Bakery/Bread
+427,canned coconut milk,Canned and Jarred
+428,chipotle chile,Canned and Jarred
+429,greek yogurt,"Milk, Eggs, Other Dairy"
+430,ground chorizo,Meat
+431,lean ground beef,Meat
+432,tater tots,Frozen
+

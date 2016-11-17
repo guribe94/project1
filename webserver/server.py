@@ -39,9 +39,9 @@ app = Flask(__name__, template_folder=tmpl_dir)
 #     DATABASEURI = "postgresql://ewu2493:foobar@<IP_OF_POSTGRE_SQL_SERVER>/postgres"
 #
 # Swap out the URI below with the URI for the database created in part 2
-DATABASEURI = "sqlite:///test.db"
+DATABASEURI = "postgresql://jnb2135:26mxk@104.196.175.120/postgres"
 
-
+pantryid=1
 #
 # This line creates a database engine that knows how to connect to the URI above
 #
@@ -274,6 +274,22 @@ def addPantryItem():
   item = request.form['item']
   print "username", username
   print "item", item
+  
+
+  statement = ("""INSERT INTO pantry VALUES("""+pantryid+""","""+item+""");""")
+  try:
+	g.conn.execute(statement)
+  except:
+  	pantryid+=1
+  
+  statement = (""""SELECT * FROM pantry""");
+  cursor=g.conn.execute(statement)
+  li = []
+  for row in cursor:
+  	li.append(row)
+
+  output = {'pantry':li}
+  print output
 
   # TODO: Add this item to the users pantry
   # TODO: Get the new pantry and return it
@@ -300,6 +316,17 @@ def editPantryItem():
         print "new item", newItem
 
         # TODO:Make the DB Query
+	statement = ("""UPDATE pantry SET name="""+newItem+""" WHERE pid="""+itemID+""";""" )
+	g.conn.execute(statement)
+
+	statement = ("""SELECT * FROM pantry;""")
+        cursor = g.conn.execute(statement)
+
+        li = []
+        for row in cursor:
+	      li.append(row)
+	
+	output = {'pantry':li}
 
     # TODO: Get the new pantry and return it
     # jsonify(output)
@@ -324,9 +351,22 @@ def deletePantryItem():
         print "username given", user
         print "itemID given", itemID
 
+	statement = ("""DELETE from pantry WHERE pid="""+itemID+""";""")
+	cursor = g.conn.execute(statement)
+
+        statement = ("""SELECT * FROM pantry;""")
+        cursor = g.conn.execute(statement)
+ 
+        li = []
+        for row in cursor:
+              li.append(row)
+ 
+        output = {'pantry':li}
+
         # TODO:Make the DB Query
     # TODO: Get the new pantry and return it
-    # jsonify(output)
+    
+    return jsonify(output)
 
 
 

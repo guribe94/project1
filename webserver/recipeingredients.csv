@@ -1,780 +1,829 @@
-reid,quantity,info
-1,1.0 tablespoon,baking powder
-2,7.0 tablespoons,butter
-3,75.0 grams,cane sugar
-4,6.0 servings,eggs
-5,300.0 grams,flour
-6,2.0 cups,milk
-7,0.5 teaspoon,sea salt
-8,14.0 ounce,chicken stock
-9,4.0 ounce,chili peppers
-10,2.0 tablespoons,flour
-11,6.0 7-inch,flour tortillas
-12,0.25 cup,greek yogurt
-13,0.25 teaspoon,ground cumin
-14,0.333333333333 cup,monterey jack cheese
-15,0.25 teaspoon,salt
-16,0.25 cup,scallions
-17,0.5 cup,skim milk
-18,0.5 pound,skinless boneless chicken breasts
-19,8.0 ounce,sour cream
-20,4.0 cups,spinach
-21,6.0 servings,tomatoes
-22,1.0 tsp,file powder
-23,1.0 servings,bay leaf
-24,1.0 servings,cardamom
-25,0.25 servings,cashew nuts
-26,0.5 servings,chili powder
-27,3.0 inch,cinnamon stick
-28,2.0 tbsp,fresh coriander leaves
-29,2.0 tbsp,fried onions
-30,9.0 servings,fried onions
-31,2.0 tbsp,ghee
-32,1.0 tbsp,ginger garlic paste
-33,4.0 servings,green cardamoms
-34,1.0 servings,green chili
-35,1.0 servings,mace
-36,1.0 leaves,mint leaves
-37,2.0 tbsp,mint leaves
-38,1.0 tsp,oil
-39,2.0 servings,onions
-40,1.25 cup,paneer
-41,3.0 cubes,paneer
-42,1.5 cups,rice
-43,1.0 tsp,rose water
-44,3.0 servings,salt
-45,0.5 tsp,shahi jeera
-46,1.0 servings,star anise
-47,0.25 tsp,turmeric
-48,0.5 cup,yogurt
-49,1.0 package,active yeast
-50,0.5 cup,butter
-51,1.25 cups,coconut milk
-52,2.0 servings,eggs
-53,4.0 cups,flour
-54,0.75 teaspoon,ground cardamom
-55,2.0 tablespoons,orange juice
-56,1.0 teaspoon,orange zest
-57,1.5 cups,powdered sugar
-58,0.5 teaspoon,salt
-59,0.333333333333 cup,sugar
-60,0.5 servings,cantaloupe
-61,1.0 tablespoon,fresh chives
-62,2.0 ounces,prosciutto
-63,0.333333333333 cup,ricotta cheese
-64,2.0 tablespoons,walnuts
-65,1.0 servings,avocado
-66,15.0 ounce,canned black beans
-67,28.0 ounce,canned tomatoes
-68,1.5 cups,chicken stock
-69,1.0 clove,garlic
-70,1.5 teaspoons,ground cumin
-71,1.0 servings,jalapeno
-72,1.0 pound,lean ground beef
-73,1.0 servings,onion
-74,1.0 cup,quinoa
-75,15.0 ounce,whole kernel corn
-76,1.0 cup,baby carrots
-77,8.0 ounces,fontina cheese
-78,3.0 cups,fusilli pasta
-79,2.0 servings,garlic cloves
-80,1.0 cups,heavy whipping cream
-81,2.0 tablespoons,olive oil
-82,2.0 servings,onions
-83,0.5 cup,parmesan cheese
-84,0.25 teaspoon,pepper
-85,0.5 teaspoon,salt
-86,0.5 cup,tomatoes
-87,2.0 servings,yellow summer squash
-88,2.0 servings,yellow sweet peppers
-89,4.0 servings,zucchini
-90,2.0 tablespoons,butter
-91,0.5 teaspoon,ground mustard
-92,6.0 servings,lemon wedges
-93,0.333333333333 cup,maple syrup
-94,0.5 cup,pecans
-95,0.25 teaspoon,pepper
-96,2.0 pounds,salmon fillets
-97,6.0 servings,salt
-98,1.0 teaspoon,worcestershire sauce
-99,2.0 servings,avocado
-100,1.0 cup,blue cheese
-101,1.0 cup,grape tomatoes
-102,4.0 servings,hard-boiled eggs
-103,4.0 cups,mixed salad greens
-104,4.0 servings,skinless boneless chicken breast
-105,6.0 slices,thick-cut bacon
-106,0.25 tsp,allspice
-107,15.0 oz,canned tomatoes
-108,2.0 lb,chuck roast
-109,1.0 servings,cucumber
-110,1.0 tsp,cumin
-111,0.5 tsp,dried mint
-112,10.0 oz,greek yogurt
-113,0.5 tsp,ground pepper
-114,1.0 servings,jalepeno
-115,1.0 servings,onion
-116,10.0 servings,pita bread
-117,3.0 cloves,whole garlic
-118,2.0 tbsp,almonds
-119,2.0 cups,arugula
-120,2.0 servings,carrots
-121,0.25 cup,dried cranberries
-122,0.25 cup,goat cheese
-123,0.5 cup,olive oil
-124,1.5 tbsp,red wine vinegar
-125,2.0 servings,salt and pepper
-126,0.5 tsp,sugar
-127,1.0 teaspoon,almond extract
-128,2.0 tablespoons,blueberry jam
-129,4.0 ounces,cream cheese
-130,1.0 can,crescent rolls
-131,1.0 servings,egg
-132,1.0 tablespoon,flour
-133,2.0 tablespoons,milk
-134,1.0 pinch,sea salt
-135,0.666666666667 cup,sugar
-136,1.0 tablespoon,turbinado sugar
-137,24.0 ounces,barbecue sauce
-138,4.0 servings,big shells
-139,1.0 tsp,black pepper
-140,3.0 lbs,chicken breast
-141,1.0 tsp,garlic powder
-142,1.0 tbsp,onion salt
-143,1.0 tbsp,paprika
-144,12.0 oz,wheat beer
-145,0.25 cup,agave syrup
-146,8.0 servings,bananas
-147,0.5 cup,coconut meat
-148,0.5 cup,lite coconut milk
-149,1.0 pinch,salt
-150,0.25 cup,unsweetened shredded coconut
-151,3.0 cups,brown rice
-152,0.5 cup,brown rice syrup
-153,1.0 Tbsp,butter
-154,0.25 tsp,coarse sea salt
-155,6.0 oz,dark chocolate
-156,0.5 cup,heavy cream
-157,0.75 cup,peanut butter
-158,0.5 tsp,vanilla
-159,0.5 teaspoon,dry mustard
-160,4.0 servings,green onions
-161,0.5 cup,red wine vinegar
-162,2.0 tablespoon,sugar
-163,1.0 cup,vegetable oil
-164,0.75 teaspoon,worcestershire sauce
-165,1.0 tsp,black pepper
-166,1.0 cup,carrots
-167,1.0 cup,lentils
-168,1.5 cups,okra
-169,1.0 Tbs,olive oil
-170,1.0 servings,onion
-171,1.0 cup,red potatoes
-172,0.5 tsp,salt
-173,1.0 cup,sugar snap peas
-174,4.0 cups,vegetable stock
-175,1.0 cup,butter
-176,2.0 cups,sugar
-177,2.0 servings,eggs
-178,0.25 cup,cocoa
-179,0.75 cup,milk
-180,1.0 teaspoon,baking soda
-181,1.0 teaspoon,vanilla
-182,2.0 cups,all purpose flour
-183,1.0 cup,coffee
-184,0.5 cup,butter
-185,2.0 tablespoons,cocoa
-186,0.25 cup,milk
-187,3.5 cups,icing sugar
-188,0.125 teaspoon,baking powder
-189,1.0 servings,egg
-190,80.0 g,flour
-191,0.5 cup,powdered sugar
-192,2.0 teaspoons,raspberry jam
-193,0.125 teaspoon,salt
-194,115.0 g,semisweet chocolate
-195,70.0 g,sugar
-196,2.0 tablespoons,unsalted butter
-197,2.0 tablespoons,unsweetened cocoa powder
-198,1.0 teaspoon,vanilla extract
-199,1.0 servings,baguette
-200,2.0 tbsp,basil leaves
-201,1.0 cup,hummus
-202,1.0 tbsp,lemon juice
-203,0.25 cup,olive oil
-204,0.333333333333 cup,pesto
-205,32.0 servings,salt and pepper
-206,2.0 cans,tuna in olive oil
-207,1.0 Sheet,tray
-208,1.0 teaspoon,baking soda
-209,0.5 cup,brown sugar
-210,10.0 tablespoons,butter
-211,2.0 servings,eggs
-212,2.0 cups,flour
-213,1.5 tablespoons,molasses
-214,0.25 teaspoon,salt
-215,2.0 cups,semi sweet chocolate chips
-216,1.0 teaspoon,vanilla extract
-217,0.5 cup,white sugar
-218,1.0 servings,avocado
-219,15.0 ounce,canned tomatoes
-220,2.0 quarts,chicken broth
-221,1.0 servings,chipotle chiles in adobo
-222,3.0 clove,garlic
-223,1.0 servings,lime
-224,2.0 tablespoons,olive oil
-225,6.0 servings,salt
-226,0.5 cup,shredded cheese
-227,4.0 servings,skinless boneless chicken breast halves
-228,6.0 ounces,tortilla chips
-229,1.0 servings,white onion
-230,0.333333333333 cup,apple cider vinegar
-231,0.5 cup,brown sugar
-232,0.25 teaspoon,cayenne pepper
-233,3.0 pounds,chicken wings
-234,3.0 cloves,garlic
-235,0.25 teaspoon,ground pepper
-236,0.5 teaspoon,ground pepper
-237,1.0 teaspoon,hot sauce
-238,2.0 cups,ketchup
-239,0.5 tablespoon,kosher salt
-240,0.25 teaspoon,salt
-241,0.25 cup,bbq sauce
-242,0.25 cup,sweet onion
-243,0.25 cup,tomato paste
-244,0.25 cup,vegetable oil
-245,0.25 cup,whiskey
-246,0.75 cup,whiskey
-247,0.25 cup,worcestershire sauce
-248,1.0 servings,baguette
-249,8.0 servings,extra virgin olive oil
-250,29.0 oz,fire-roasted tomatoes
-251,2.0 cloves,garlic
-252,8.0 servings,greens
-253,1.0 servings,jalapeno
-254,8.0 servings,jam
-255,0.5 teaspoon,kosher salt
-256,0.5 cup,sherry vinegar
-257,0.5 cup,turbinado sugar
-258,8.0 servings,lardo
-259,0.125 tsp,black pepper
-260,12.0 oz,crab meat
-261,0.125 tsp,creole seasoning
-262,1.0 T,green onions
-263,0.5 c,olive oil
-264,1.0 T,ranch dressing mix
-265,1.0 tsp,salad mix
-266,0.125 tsp,salt
-267,6.0 oz,shrimp
-268,2.0 pounds,boneless pork chops
-269,0.666666666667 cups,breadcrumbs
-270,2.0 tablespoons,butter
-271,1.0 teaspoon,dijon mustard
-272,10.0 ounces,frozen spinach
-273,2.0 cloves,garlic
-274,4.0 ounces,goat cheese
-275,4.0 servings,kosher salt
-276,0.5 servings,onion
-277,0.5 cup,white wine
-278,0.25 cup,bbq sauce
-279,1.0 package,chicken
-280,0.125 cup,cilantro
-281,1.0 cup,corn
-282,1.0 cup,feta cheese
-283,24.0 servings,taco shells
-284,1.0 cup,apple juice
-285,4.0 servings,apples
-286,1.0 cup,cheddar
-287,1.0 tablespoon,dijon mustard
-288,2.0 cloves,garlic
-289,2.0 cups,ham
-290,1.0 cup,milk
-291,1.0 tablespoon,oil
-292,1.0 servings,onion
-293,4.0 servings,salt and pepper
-294,1.0 teaspoon,thyme
-295,1.0 tbsp,balsamic vinegar
-296,4.0 servings,barbecue sauce
-297,1.0 package,beef
-298,1.0 tbsp,olive oil
-299,1.0 servings,red onion
-300,4.0 servings,rolls
-301,4.0 servings,salt
-302,0.333333333333 cup,sharp cheddar cheese
-303,1.0 lb,feta cheese
-304,0.5 cup,olive oil
-305,0.5 cup,pesto
-306,8.0 servings,portobello mushrooms
-307,2.0 cups,tomatoes
-308,12.0 ounces,buttermilk biscuits
-309,0.25 teaspoon,dried basil
-310,0.125 teaspoon,dried oregano
-311,0.125 teaspoon,garlic powder
-312,0.125 teaspoon,garlic salt
-313,0.5 cup,mayonnaise
-314,1.0 Dash,onion salt
-315,0.666666666667 cup,parmesan cheese
-316,1.0 servings,apple
-317,1.5 oz,apple
-318,1.0 oz,schnapps
-319,1.0 oz,vodka
-320,3.0 servings,coarse salt
-321,3.0 servings,cracked pepper
-322,2.0 servings,garlic cloves
-323,2.0 tbs,ghee
-324,3.0 servings,juice of lemon
-325,2.0 tsp,marjoram
-326,6.0 servings,sardines
-327,3.0 servings,thyme
-328,5.0 ounces,baby spinach
-329,2.0 cups,chicken broth
-330,12.0 ounces,chicken sausage
-331,2.0 cloves,garlic
-332,1.0 servings,onion
-333,0.5 teaspoon,pepper
-334,0.25 cup,pine nuts
-335,0.25 teaspoon,salt
-336,2.0 cups,whole wheat couscous
-337,2.0 servings,cayenne pepper
-338,2.0 servings,chili powder
-339,4.0 cups,kale
-340,2.0 tbsp,olive oil
-341,2.0 servings,sea salt
-342,0.25 teaspoon,5 spice powder
-343,2.0 teaspoons,canola oil
-344,8.0 servings,clementines
-345,0.25 cup,fresh cilantro leaves
-346,1.0 teaspoon,kosher salt
-347,0.25 teaspoon,peppercorns
-348,1.0 tablespoon,scallion greens
-349,0.25 teaspoon,sesame oil
-350,2.0 pounds,skinless bone-in chicken thighs
-351,16.0 ounce,alfredo pasta sauce
-352,2.0 cups,broccoli florets
-353,1.0 tablespoon,butter
-354,7.5 ounce,buttermilk biscuits
-355,2.0 cups,cooked chicken
-356,0.25 teaspoon,dried basil leaves
-357,2.0 cups,fresh mushrooms
-358,0.25 cup,milk
-359,0.5 cup,onion
-360,1.0 tablespoon,parmesan cheese
-361,1.0 teaspoon,almond extract
-362,1.0 tablespoon,baking powder
-363,4.0 oz,bittersweet chocolate
-364,2.0 cups,cherries
-365,2.0 servings,eggs
-366,3.0 cups,flour
-367,1.5 cups,granulated sugar
-368,0.666666666667 cup,milk
-369,1.0 teaspoon,salt
-370,0.666666666667 cup,vegetable oil
-371,2.0 Tbs,butter
-372,2.0 cups,chicken broth
-373,1.0 cup,long-grain rice
-374,6.0 servings,salt and pepper
-375,1.0 cup,sharp cheddar
-376,2.0 cups,zucchini
-377,2.0 Tbsp,butter
-378,1.5 cups,celery
-379,2.0 servings,chicken breasts
-380,4.0 cups,chicken broth
-381,2.0 Tbsp,cornstarch
-382,4.0 cloves,garlic
-383,6.0 servings,garlic salt
-384,1.0 cup,green onions
-385,1.0 cup,half & half
-386,0.5 cup,orzo
-387,6.0 servings,salt and pepper
-388,2.0 Tbsp,water
-389,1.5 cups,diced carrots
-390,12.0 servings,baguette
-391,12.0 ounces,cranberries
-392,12.0 servings,garlic herb spreadable cheese
-393,0.5 teaspoon,ground cinnamon
-394,0.5 cup,honey
-395,1.0 servings,orange zest
-396,0.5 cup,water
-397,4.0 cups,bread
-398,2.0 tablespoons,butter
-399,3.0 servings,eggs
-400,2.0 cups,milk
-401,6.0 ounces,semisweet chocolate chips
-402,0.5 cup,sugar
-403,1.0 teaspoon,vanilla extract
-404,1.0 servings,banana
-405,0.5 cup,greek yogurt
-406,2.0 tsp,honey
-407,1.0 cup,ice cubes
-408,1.0 servings,juice of lime
-409,0.5 cup,light coconut milk
-410,1.0 cup,pineapple
-411,0.333333333333 cup,shredded coconut
-412,1.0 tsp,vanilla
-413,0.25 cup,brown sugar
-414,1.5 cups,cranberries
-415,3.0 pounds,granny smith apples
-416,0.5 teaspoon,ground cinnamon
-417,2.0 Tbsp,lemon juice
-418,0.5 teaspoon,salt
-419,1.0 cup,water
-420,0.5 cup,white sugar
-421,1.0 fillet,anchovy
-422,1.0 teaspoon,brown sugar
-423,0.25 teaspoon,cayenne pepper
-424,1.0 servings,chile
-425,2.0 servings,french fries
-426,0.5 cup,fresh cilantro
-427,2.0 tablespoons,fresh oregano
-428,0.25 cup,fresh parsley
-429,1.0 servings,garlic clove
-430,2.0 teaspoons,ground coriander
-431,2.0 teaspoons,kosher salt
-432,2.0 servings,lobster tails
-433,2.0 servings,olive oil
-434,2.0 teaspoons,paprika
-435,2.0 servings,ribeye steaks
-436,1.0 head,roasted garlic
-437,2.0 servings,salt and pepper
-438,1.0 servings,shallot
-439,1.0 cup,unsalted butter
-440,1.0 tablespoon,asian fish sauce
-441,0.25 cup,cilantro
-442,3.0 servings,garlic cloves
-443,4.0 servings,lettuce leaves
-444,2.0 tablespoons,lime juice
-445,0.25 cup,mint
-446,3.0 servings,scallions
-447,0.25 pound,shiitake mushrooms
-448,3.0 tablespoons,soy sauce
-449,2.0 teaspoons,sugar
-450,2.0 servings,thai chiles
-451,0.5 pound,tofu
-452,1.0 tablespoon,vegetable oil
-453,0.5 teaspoon,black pepper
-454,0.333333333333 cup,honey
-455,0.5 cup,plum sauce
-456,0.333333333333 cup,rice wine vinegar
-457,1.0 teaspoon,salt
-458,0.5 cup,sherry wine
-459,2.5 pounds,skinless boneless chicken thighs
-460,0.5 cup,soy sauce
-461,0.5 cup,water
-462,8.0 ounces,angel food cake
-463,2.0 quarts,strawberries
-464,15.0 servings,sugar
-465,0.5 gallon,vanilla ice cream
-466,2.0 cups,oats
-467,1.0 cup,sweet potato
-468,1.0 cup,unsweetened coconut
-469,25.0 servings,stevia drops
-470,1.0 serving,candy cane
-471,1.0 servings,espresso
-472,1.0 serving,ice
-473,1.5 servings,kahlua mocha
-474,30.0 ml,vodka
-475,1.0 teaspoon,dijon mustard
-476,0.5 cup,extra virgin olive oil
-477,1.0 Tablespoon,fresh thyme
-478,1.0 servings,garlic clove
-479,0.5 cup,grapeseed oil
-480,1.0 teaspoon,lemon juice
-481,0.25 servings,salt
-482,1.0 servings,whole egg
-483,2.0 Tbsp,all purpose flour
-484,14.0 oz,artichoke hearts
-485,1.0 Tbsp,butter
-486,1.0 cup,frozen spinach
-487,4.0 servings,garlic cloves
-488,14.0 oz,light coconut milk
-489,3.0 Tbsp,parmesan cheese
-490,6.0 servings,Salt & Pepper
-491,24.0 oz,skinless boneless chicken breasts
-492,0.5 cup,heavy cream
-493,3.0 tablespoons,raw honey
-494,1.0 teaspoon,vanilla extract
-495,3.0 servings,baby carrots
-496,3.0 servings,bean sprouts
-497,1.0 cup,broccoli florets
-498,3.0 servings,cilantro
-499,1.0 clove,garlic
-500,3.0 servings,green onion
-501,3.0 servings,jalapenos
-502,2.0 pieces,lemongrass
-503,3.0 oz,ramen noodles
-504,1.5 teaspoons,sesame oil
-505,0.5 lb,shrimp
-506,3.0 servings,sugar snap peas
-507,6.0 cups,water
-508,1.0 cup,grits
-509,4.0 cups,water
-510,0.25 teaspoon,salt
-511,4.0 oz,goat cheese
-512,1.0 servings,red bell pepper
-513,0.5 servings,red onion
-514,1.0 servings,zucchini
-515,1.0 servings,yellow squash
-516,1.0 pint,cherry tomatoes
-517,2.0 tablespoons,olive oil
-518,1.0 serving,Salt & Pepper
-519,4.0 servings,eggs
-520,1.0 serving,chives
-521,0.5 teaspoon,crushed red pepper
-522,10.0 ounces,ground pork sausage
-523,4.0 tablespoons,olive oil
-524,0.5 cup,parmesan cheese
-525,1.0 pound,penne pasta
-526,0.5 cup,red onion
-527,3.0 pinches,salt
-528,3.0 cups,tomato puree
-529,0.5 cup,water
-530,4.0 quarts,water
-531,3.0 cups,white mushrooms
-532,5.0 tablespoons,butter
-533,6.0 cups,crispy rice cereal
-534,10.0 ounce,marshmallows
-535,0.25 teaspoon,vanilla extract
-536,0.5 servings,avocado
-537,12.0 servings,beans
-538,3.0 servings,baby corn
-539,3.0 sheets,nori
-540,1.0 tsp,salt
-541,1.0 Tbs,sugar
-542,1.0 cup,sushi rice
-543,2.0 Tbs,unseasoned rice vinegar
-544,4.0 servings,bacon rashers
-545,2.0 slices,crusty bread
-546,2.0 servings,eggs
-547,2.0 tbsp,rapeseed oil
-548,1.0 tbsp,red wine vinegar
-549,1.0 servings,shallot
-550,2.0 handfuls,watercress
-551,1.0 tsp,wholegrain mustard
-552,1.0 cup,barley
-553,3.0 servings,beef base
-554,3.0 servings,carrots
-555,2.0 cups,celery
-556,5.0 cloves,garlic
-557,2.0 pounds,lamb stew meat
-558,2.0 tablespoons,oil
-559,2.0 servings,onions
-560,1.0 servings,potato
-561,8.0 servings,salt and pepper
-562,10.0 cups,water
-563,1.0 tablespoon,apple cider vinegar
-564,1.0 tablespoon,canola oil
-565,1.0 cup,cucumber
-566,1.5 cups,fresh fruit
-567,2.0 tablespoons,scallions
-568,1.0 tablespoon,sugar
-569,2.0 Tbsp,flour
-570,1.0 cup,mayo
-571,1.0 lb,mushrooms
-572,2.0 Tbsp,olive oil
-573,0.5 servings,onion
-574,0.5 tsp,pepper
-575,1.0 tsp,salt
-576,15.0 servings,skinless boneless chicken thighs
-577,1.0 Tbsp,mrs dash
-578,3.0 tsp,baking powder
-579,2.0 sticks,butter
-580,1.5 Tbsp,cinnamon
-581,0.666666666667 cup,crisco
-582,2.0 servings,eggs
-583,3.0 cup,flour
-584,0.5 tsp,ground cinnamon
-585,0.5 tsp,ground nutmeg
-586,1.0 cup,milk
-587,1.0 tsp,salt
-588,2.5 cup,sugar
-589,0.25 cup,creamy peanut butter
-590,4.0 servings,fresh cilantro
-591,1.0 clove,garlic
-592,4.0 servings,green onions
-593,0.125 teaspoon,ground ginger
-594,1.0 tablespoon,lime juice
-595,1.0 tablespoon,olive oil
-596,1.0 tablespoon,olive oil
-597,2.0 tablespoons,reduced sodium soy sauce
-598,4.0 servings,roasted peanuts
-599,4.0 servings,sesame seeds
-600,8.0 ounces,spaghetti
-601,0.25 teaspoon,sriracha
-602,15.0 ounces,stir fry vegetables
-603,4.0 servings,water
-604,1.0 Cup,all purpose flour
-605,2.0 tsp,baking powder
-606,0.5 Cup,butter
-607,15.0 oz,cherries
-608,1.0 Cup,milk
-609,1.0 pinch,salt
-610,1.0 Cup,sugar
-611,2.0 tablespoons,arrowroot powder
-612,6.0 slices,bacon
-613,4.0 tablespoons,bacon fat
-614,0.25 teaspoon,baking soda
-615,0.5 pound,black eyed peas
-616,0.25 teaspoon,cayenne pepper
-617,2.0 cups,collard greens
-618,1.0 servings,garnet yam
-619,1.0 tablespoon,olive oil
-620,0.5 teaspoon,smoked paprika
-621,0.5 teaspoon,unrefined sea salt
-622,1.0 servings,yellow onion
-623,0.75 c,butter
-624,0.5 c,corn syrup
-625,1.0 servings,egg
-626,3.0 c,marshmallows
-627,12.0 oz,peanut butter chips
-628,2.0 c,peanuts
-629,2.0 c,rice krispies cereal
-630,1.0 tsp,vanilla
-631,1.0 servings,yellow cake mix
-632,2.0 servings,carrots
-633,1.0 head,cauliflower
-634,2.0 servings,eggs
-635,1.0 cup,fresh peas
-636,2.0 servings,garlic cloves
-637,2.0 servings,green onions
-638,1.0 tablespoon,olive oil
-639,1.0 tablespoon,sesame oil
-640,3.0 tablespoons,soy sauce
-641,1.0 servings,yellow onion
-642,1.0 tablespoon,capers
-643,1.0 loaf,country bread
-644,0.5 cup,flat-leaf parsley
-645,2.0 teaspoons,garlic
-646,1.0 servings,juice of orange
-647,1.0 cup,mayonnaise
-648,2.0 tablespoons,olive oil
-649,1.0 cup,pimento stuffed olives
-650,8.0 servings,salt and pepper
-651,1.0 pound,shrimp
-652,1.0 teaspoon,smoked paprika
-653,2.0 cups,alfalfa sprouts
-654,5.0 oz,blue cheese
-655,1.0 servings,egg
-656,1.0 lb,ground beef
-657,16.0 servings,hawaiian sweet rolls
-658,0.333333333333 cup,mayonnaise
-659,1.0 cup,pickled okra
-660,16.0 servings,salt and pepper
-661,8.0 oz,sausage links
-662,1.0 servings,shallot
-663,0.25 cup,stone ground mustard
-664,2.0 teaspoons,baking powder
-665,0.25 teaspoon,baking soda
-666,6.0 tablespoons,butter
-667,1.0 cup,buttermilk
-668,1.0 cup,corn kernels
-669,1.0 cup,cornmeal
-670,2.0 servings,eggs
-671,1.0 cup,flour
-672,0.5 teaspoon,kosher salt
-673,0.25 cup,sugar
-674,3.0 cubes,bouillon
-675,1.0 head,cabbage
-676,1.0 clove,garlic
-677,1.0 inch,ginger
-678,0.5 lb,ground pork
-679,1.0 servings,onion
-680,0.5 tsp,salt
-681,0.25 tsp,sesame oil
-682,1.0 tsp,soy sauce
-683,2.0 Tbsp,vegetable oil
-684,1.0 pkg,wonton wrappers
-685,2.0 tablespoons,butter
-686,1.0 tablespoon,honey
-687,1.0 tablespoon,pumpkin pie spice
-688,3.0 cups,pumpkin seeds
-689,2.0 servings,sugar
-690,4.0 servings,black pepper
-691,4.0 servings,canola oil
-692,1.0 cup,chicken stock
-693,1.0 teaspoon,curry powder
-694,0.25 cup,dry white wine
-695,1.0 tablespoon,fresh tarragon
-696,4.0 servings,kosher salt
-697,1.0 tablespoon,shallot
-698,32.0 ounces,skinless boneless chicken breasts
-699,1.0 teaspoon,sweet paprika
-700,3.0 tablespoons,unsalted butter
-701,2.0 tablespoons,brown sugar
-702,2.0 tablespoons,butter
-703,1.0 cup,coffee
-704,0.5 cup,heavy cream
-705,1.0 pound,steaks
-706,4.0 servings,eggs
-707,3.0 ounce,instant lemon pudding mix
-708,18.25 ounce,lemon cake mix
-709,6.0 ounce,lemonade concentrate
-710,0.75 cup,vegetable oil
-711,0.75 cup,water
-712,0.5 cup,white sugar
-713,3.0 teaspoons,baking powder
-714,2.0 tablespoon,canola oil
-715,3.0 cups,chocolate chips
-716,1.0 cup,creamy peanut butter
-717,2.0 cups,flour
-718,18.0 servings,kosher salt
-719,0.25 cup,powdered sugar
-720,0.5 teaspoon,salt
-721,1.0 tablespoon,sugar
-722,6.0 tablespoon,unsalted butter
-723,1.0 teaspoon,vanilla extract
-724,0.666666666667 cup,water
-725,1.0 servings,avocado
-726,0.5 cup,bbq sauce
-727,0.5 cup,cilantro
-728,1.0 lb,ground pork
-729,1.0 servings,jalapeno
-730,1.0 servings,juice of lime
-731,1.0 servings,mango
-732,1.0 cup,pineapple
-733,0.25 cup,red onion
-734,4.6 oz,taco shells
-735,0.25 cup,butter
-736,3.0 oz,gelatin
-737,10.0 oz,marshmallows
-738,12.0 cups,popped popcorn
-739,5.5 Cups,all purpose flour
-740,0.5 tsp,almond extract
-741,1.0 tsp,baking powder
-742,0.5 tsp,baking soda
-743,0.5 Cup,brown sugar
-744,0.25 Cup,candy canes
-745,0.333333333333 Cup,cocoa powder
-746,5.5 Cups,coconut milk
-747,6.0 Oz,cream cheese
-748,2.0 servings,eggs
-749,1.0 Cup,heavy whipping cream
-750,1.0 tsp,milk
-751,0.25 Cup,olive oil
-752,1.0 tsp,peppermint extract
-753,3.5 Cups,powdered sugar
-754,0.25 tsp,salt
-755,5.5 tsp,vanilla
-756,0.5 Cup,white sugar
-757,0.5 cup,bread crumbs
-758,16.0 ounce,canned black beans
-759,2.0 servings,eggs
-760,0.25 cup,fresh parsley
-761,3.0 cloves,garlic
-762,1.0 cup,mushrooms
-763,0.5 servings,onion
-764,0.5 cup,quick cooking barley
-765,0.5 servings,red bell pepper
-766,4.0 servings,ground pepper
-767,1.0 cup,shredded cheddar cheese
-768,1.0 cup,water
-769,1.0 servings,avocado
-770,3.0 cups,cabbage
-771,2.0 teaspoons,canola oil
-772,3.0 servings,chipotle chilis in adobo
-773,5.0 tablespoons,cider vinegar
-774,0.25 cup,cilantro leaves
-775,12.0 servings,corn tortillas
-776,1.0 servings,flank steak
-777,0.25 cup,maple syrup
-778,0.5 cup,radishes
-779,1.5 teaspoons,salt
+d,quantity,info
+15,1.5 teaspoons,almond extract
+16,0.75 teaspoon,baking soda
+17,2.0 teaspoons,corn starch
+18,1.0 servings,egg
+19,1.5 cups,flour
+20,0.75 cup,granulated sugar
+21,1.5 teaspoons,imitation vanilla extract
+22,1.0 pinch,salt
+23,0.75 cup,sprinkles
+24,0.5 cup,unsalted butter
+25,0.25 cup,dijon mustard
+26,3.0 tablespoons,fresh dill
+27,2.0 servings,garlic cloves
+28,2.0 servings,green onions
+29,0.25 teaspoon,lime juice
+30,1.0 cup,mayonnaise
+31,0.5 teaspoon,pepper
+32,0.5 cup,red onion
+33,2.0 pounds,red potatoes
+34,0.5 teaspoon,salt
+35,0.5 pound,asparagus
+36,1.0 cup,blueberries
+37,1.0 tablespoon,cider vinegar
+38,1.0 teaspoon,dijon mustard
+39,0.25 cup,feta
+40,0.25 cup,fresh basil
+41,1.0 tablespoon,honey
+42,2.0 tablespoons,lemon juice
+43,0.25 cup,olive oil
+44,0.5 cup,pecans
+45,0.125 teaspoon,pepper
+46,1.0 servings,red bell pepper
+47,3.0 tablespoons,red onion
+48,4.5 cups,rice
+49,0.25 teaspoon,salt
+50,1.5 cups,strawberries
+51,40.0 g,almonds
+52,350.0 g,baby peas
+53,390.0 g,canned butter beans
+54,400.0 g,canned tomatoes
+55,175.0 g,couscous
+56,1.0 tsp,cumin seeds
+57,3.0 servings,garlic cloves
+58,0.5 tsp,ground cinnamon
+59,1.0 tbsp,harissa
+60,2.0 strips,lemon zest
+61,150.0 g,non fat natural yogurt
+62,1.0 servings,onion
+63,1.0 tbsp,rapeseed oil
+64,200.0 ml,vegetable stock
+65,0.25 cup,coconut butter
+66,2.0 tablespoons,coconut oil
+67,0.25 cup,dark chocolate chips
+68,2.0 tablespoons,liquid smoke
+69,0.25 cup,sunflower seed butter
+70,1.0 tablespoons,unsweetened cocoa powder
+71,4.0 servings,carrots
+72,2.0 teaspoons,chili-garlic sauce
+73,4.0 cups,cooked brown rice
+74,4.0 servings,cucumbers
+75,4.0 servings,eggs
+76,1.0 teaspoon,fresh ginger
+77,1.0 clove,garlic
+78,2.0 servings,green onions
+79,4.0 servings,kimchi
+80,0.5 cup,low sodium soy sauce
+81,4.0 servings,mung bean sprouts
+82,1.0 tablespoon,rice vinegar
+83,1.0 tablespoon,sesame oil
+84,4.0 servings,sesame seeds
+85,6.0 ounces,shiitake mushrooms
+86,1.0 tablespoon,bbq sauce
+87,1.0 servings,sweet potato
+88,350.0 g,breadcrumbs
+89,1.0 servings,carrot
+90,100.0 g,corn syrup
+91,450.0 g,currants
+92,3.0 servings,eggs
+93,2.0 servings,juice of lemon
+94,350.0 g,light brown sugar
+95,100.0 g,mixed peel
+96,175.0 g,raisins
+97,350.0 g,self-raising flour
+98,440.0 ml,stout
+99,350.0 g,suet
+100,225.0 g,sultanas
+101,0.75 cup,almond meal
+102,1.0 teaspoon,baking powder
+103,1.0 teaspoon,baking soda
+104,2.0 servings,eggs
+105,2.0 cups,flour
+106,1.0 cup,granulated sugar
+107,0.75 cup,lemon
+108,2.0 cups,lemon curd
+109,3.0 tablespoons,lemon zest
+110,0.5 cup,light brown sugar
+111,1.0 teaspoon,salt
+112,1.0 cup,sour cream
+113,6.0 tablespoons,unsalted butter
+114,1.0 teaspoon,vanilla extract
+115,1.0 bottle,champagne
+116,8.0 servings,coarse salt
+117,1.0 cup,cointreau
+118,8.0 servings,lime
+119,1.0 cup,lime juice
+120,1.0 servings,lime zest
+121,1.0 cup,silver tequila
+122,8.0 servings,superfine sugar
+123,0.5 teaspoon,celery seeds
+124,1.0 tablespoon,dried onion
+125,1.0 servings,egg
+126,3.0 cups,flour
+127,1.0 tablespoon,granulated sugar
+128,2.0 packages,instant yeast
+129,1.0 teaspoon,salt
+130,1.0 cup,sharp cheddar cheese
+131,2.0 tablespoons,shortening
+132,0.5 cup,water
+133,1.0 cup,whole milk
+134,2.0 tsp,ancho chile powder
+135,1.0 tsp,cumin
+136,4.0 servings,kosher salt
+137,1.0 tbsp,olive oil
+138,1.0 tsp,sage
+139,4.0 cups,squash
+140,8.0 servings,black pepper
+141,0.5 can,canned tomatoes
+142,0.25 teaspoon,cayenne pepper
+143,4.0 ounces,cream cheese
+144,1.0 can,green chilies
+145,1.0 cup,grits
+146,8.0 ounces,monterey jack cheese
+147,0.25 teaspoon,paprika
+148,0.5 teaspoon,salt
+149,4.0 cups,water
+150,1.0 servings,whole egg
+151,1.0 clove,garlic
+152,1.0 servings,jalapeno
+153,2.0 servings,juice of lime
+154,3.0 servings,plum tomatoes
+155,8.0 servings,sea-salt
+156,1.0 servings,shallot
+157,6.0 servings,tomatillos
+158,2.0 tablespoons,all purpose flour
+159,2.0 cups,beef broth
+160,0.25 cup,corn meal
+161,1.0 servings,egg
+162,0.25 cup,fresh cilantro
+163,1.0 servings,garlic clove
+164,0.5 pound,ground beef
+165,0.5 teaspoon,ground cumin
+166,0.5 pound,ground pork
+167,1.0 balls,meatballs
+168,0.25 cup,onion
+169,0.25 cup,red bell pepper
+170,4.0 servings,salt and pepper
+171,1.0 servings,scallion
+172,4.0 servings,bbq sauce
+173,1.5 cups,banana
+174,0.25 cup,chia seeds
+175,0.25 cup,maple syrup
+176,1.0 cup,milk
+177,0.666666666667 cup,strawberries
+178,2.5 tablespoons,unsweetened cocoa powder
+179,1.0 teaspoon,vanilla extract
+180,1.0 servings,avocados
+181,15.0 ounce,canned black beans
+182,4.0 ounce,canned green chiles
+183,3.0 tablespoons,cilantro
+184,24.0 servings,kosher salt
+185,1.0 servings,onions
+186,4.0 servings,plantains
+187,2.0 servings,poblano peppers
+188,2.0 quarts,vegetable oil
+189,8.0 servings,corn
+190,1.0 cup,guacamole
+191,2.0 cups,lettuce
+192,2.0 cups,monterey jack cheese
+193,2.0 cups,refried beans
+194,1.0 cup,salsa
+195,1.0 cup,sour cream
+196,2.0 heads,broccoli
+197,6.0 servings,cheddar cheese
+198,2.0 cans,cream of mushroom soup
+199,24.0 ounce,evaporated milk
+200,1.0 can,milk
+201,1.0 servings,onion
+202,6.0 servings,salt and pepper
+203,1.0 tsp,brown sugar
+204,0.25 lb,cabbage
+205,2.0 servings,carrots
+206,2.0 servings,green onions
+207,2.0 Tbsp,ketchup
+208,1.0 servings,onion
+209,1.0 Tbsp,sesame oil
+210,6.0 oz,soba noodles
+211,2.0 Tbsp,soy sauce
+212,1.0 c,turkey
+213,3.0 Tbsp,worcestershire sauce
+214,1.5 teaspoons,baking powder
+215,0.333333333333 cup,brown sugar
+216,0.25 cup,chocolate chips
+217,1.0 servings,egg
+218,1.0 servings,egg whites
+219,5.3 oz,nonfat greek yogurt
+220,2.0 cups,old-fashioned oats
+221,0.25 teaspoon,salt
+222,0.75 cup,skim milk
+223,3.0 tablespoons,unsweetened cocoa powder
+224,0.5 teaspoon,vanilla extract
+225,0.666666666667 cup,defrosted from
+226,0.25 cup,basil leaves
+227,28.0 ounce,canned tomatoes
+228,4.0 cloves,garlic
+229,0.5 cup,heavy cream
+230,1.0 pound,italian sausage
+231,6.0 servings,kosher salt
+232,1.0 tablespoon,olive oil
+233,0.75 cup,parmesan cheese
+234,0.25 teaspoon,red pepper flakes
+235,1.0 cup,shredded mozzarella cheese
+236,12.0 ounces,ziti pasta
+237,0.75 cup,almond meal
+238,1.5 tsp,baking powder
+239,1.0 tbsp,cinnamon
+240,0.25 cup,coconut flour
+241,5.0 tbsp,coconut oil
+242,2.0 servings,eggs
+243,1.0 cup,ground flax seed
+244,15.0 drops,liquid stevia
+245,0.25 tsp,sea salt
+246,1.0 tsp,vanilla extract
+247,1.0 tablespoon,dijon mustard
+248,1.0 teaspoon,dried dill weed
+249,1.0 servings,egg
+250,1.0 tablespoon,fresh dill
+251,2.0 tablespoons,fresh parsley
+252,2.0 cloves,garlic
+253,0.125 teaspoon,ground pepper
+254,4.0 servings,hamburger buns
+255,4.0 servings,kosher salt
+256,1.0 tablespoon,lemon juice
+257,4.0 servings,lettuce
+258,2.0 tablespoons,mayonnaise
+259,1.0 servings,onion
+260,0.5 cup,panko bread crumbs
+261,14.75 oz,salmon
+262,0.5 cup,seasoned bread crumbs
+263,2.0 tablespoons,sweet pickle relish
+264,4.0 servings,vegetable oil
+265,0.5 cup,regular
+266,1.0 servings,bay leaf
+267,2.0 tablespoons,butter
+268,1.0 can,canned cannellini beans
+269,1.0 can,canned tomatoes
+270,5.0 cups,chicken broth
+271,2.0 servings,garlic cloves
+272,0.5 servings,napa cabbage
+273,2.0 tablespoons,olive oil
+274,2.0 sprigs,oregano
+275,1.0 servings,potato
+276,8.0 servings,salt and pepper
+277,3.0 sprigs,thyme
+278,1.0 can,tomato paste
+279,0.5 servings,yellow onion
+280,1.0 tsp,coconut oil
+281,0.25 cup,dark chocolate chips
+282,3.0 servings,egg whites
+283,0.25 tsp,salt
+284,1.0 cup,slivered almonds
+285,0.25 cup,sugar
+286,2.5 cups,sweetened shredded coconut
+287,1.0 Handful,arugula leaves
+288,1.0 slice,bread
+289,1.0 serving,honey
+290,1.0 serving,peanut butter
+291,2.0 tablespoons,bacon grease
+292,1.0 tablespoon,baking powder
+293,12.0 ounce,beer
+294,3.0 cups,flour
+295,0.25 cup,granulated sugar
+296,0.5 teaspoon,salt
+297,1.0 cup,sharp cheddar cheese
+298,6.0 slices,thick-cut bacon
+299,4.0 tablespoons,unsalted butter
+300,1.0 cup,blueberries
+301,0.25 cup,cashews
+302,1.0 cup,coconut cream
+303,1.0 cup,extra-virgin coconut oil
+304,0.25 cup,unsweetened shredded coconut
+305,0.5 cup,green onions
+306,24.0 servings,oil
+307,1.0 cup,water chestnuts
+308,24.0 pieces,wonton wrappers
+309,2.0 cups,longganisa
+310,1.0 tsp,basil
+311,0.25 lb,broccoli
+312,0.5 Tbsp,brown sugar
+313,28.0 oz,canned tomatoes
+314,0.05 servings,cracked pepper
+315,2.0 oz,feta
+316,2.0 cloves,garlic
+317,1.0 Tbsp,olive oil
+318,1.0 servings,onion
+319,13.0 oz,penne pasta
+320,0.75 tsp,salt
+321,12.0 oz,sausage
+322,0.25 lb,spinach
+323,6.0 oz,tomato paste
+324,1.0 slicesslices,apple
+325,12.0 oz,brie
+326,0.666666666667 cup,brown sugar
+327,8.0 servings,crackers
+328,0.666666666667 cup,kahlua
+329,0.666666666667 cup,walnuts
+330,2.0 Tbsp,apple cider vinegar
+331,2.0 servings,beetroot
+332,2.0 tsp,dijon mustard
+333,1.0 tsp,maple syrup
+334,0.333333333333 C,mint
+335,2.0 Tbsp,olive oil
+336,2.0 servings,Salt & Pepper
+337,4.0 servings,apples
+338,0.25 teaspoon,baking powder
+339,1.5 cups,buttermilk
+340,8.0 servings,caramel sauce
+341,0.5 teaspoon,cinnamon
+342,1.0 servings,egg
+343,1.0 cup,flour
+344,0.25 teaspoon,ground nutmeg
+345,0.25 teaspoon,salt
+346,2.0 Tablespoons,sugar
+347,8.0 servings,vegetable oil
+348,1.0 servings,butternut squash
+349,1.0 cup,chicken broth
+350,4.0 servings,cilantro
+351,1.0 tsp,fresh ginger
+352,2.0 cloves,garlic
+353,2.0 tsp,light brown sugar
+354,14.0 oz,light coconut milk
+355,4.0 servings,limes
+356,1.0 tsp,olive oil
+357,1.0 servings,onion
+358,4.0 servings,peanuts
+359,2.5 tsp,red curry paste
+360,0.25 tsp,salt
+361,3.0 cups,ice
+362,0.25 cup,lime juice
+363,1.0 pinch,salt
+364,3.0 cups,strawberries
+365,0.5 cup,sugar
+366,0.75 cup,tequila
+367,0.25 cup,triple sec
+368,0.5 cup,water
+369,1.0 teaspoon,fresh ginger root
+370,1.0 clove,garlic
+371,1.0 servings,green onion
+372,4.0 servings,salt and pepper
+373,2.0 tablespoons,sesame oil
+374,2.0 tablespoons,sesame seeds
+375,0.5 cup,soy sauce
+376,6.0 tablespoons,sugar
+377,16.0 ounce,tuna steaks
+378,2.25 teaspoons,baking powder
+379,0.25 teaspoon,baking soda
+380,0.5 cup,butter
+381,0.5 cup,buttermilk
+382,1.0 servings,egg
+383,2.0 cups,flour
+384,3.0 tablespoons,granulated sugar
+385,8.0 servings,heavy cream
+386,2.0 tablespoons,lemon juice
+387,2.0 tablespoons,lemon zest
+388,0.5 cup,low fat ricotta cheese
+389,0.25 teaspoon,salt
+390,1.0 cup,strawberries
+391,8.0 servings,turbinado sugar
+392,1.0 teaspoon,vanilla extract
+393,1.0 cup,bbq sauce
+394,0.5 teaspoon,black pepper
+395,4.0 servings,chicken breasts
+396,0.25 teaspoon,fennel seeds
+397,4.0 servings,olive oil
+398,0.5 teaspoon,salt
+399,1.0 head,broccoli
+400,1.0 pound,cavatelli pasta
+401,0.25 cup,extra virgin olive oil
+402,1.0 handful,fresh mint leaves
+403,1.0 handful,fresh parsley leaves
+404,8.0 cloves,garlic
+405,2.0 teaspoons,harissa
+406,4.0 servings,kosher salt
+407,4.0 servings,parmigiano reggiano
+408,4.0 servings,pepper
+409,4.0 servings,salt
+410,1.5 cup,all purpose flour
+411,1.5 teaspoon,baking powder
+412,3.0 tablespoon,dark brown sugar
+413,0.75 cup,granulated sugar
+414,2.0 tablespoon,milk
+415,1.0 teaspoon,orange zest
+416,3.0 servings,peaches
+417,0.25 teaspoon,salt
+418,4.0 ounce,unsalted butter
+419,2.0 teaspoon,vanilla
+420,6.0 servings,whipped cream
+421,1.0 cup,beef broth
+422,2.0 pounds,beef chuck roast
+423,0.333333333333 cup,bread crumbs
+424,4.5 ounce,canned mushrooms
+425,3.0 servings,carrots
+426,4.0 stalks,celery
+427,21.5 ounce,condensed tomato soup
+428,1.0 teaspoon,dried basil
+429,0.125 teaspoon,ground pepper
+430,0.333333333333 cup,quick cooking tapioca
+431,1.0 teaspoon,salt
+432,1.0 teaspoon,soy sauce
+433,1.0 servings,yellow onion
+434,0.5 teaspoon,baking soda
+435,4.0 tablespoons,butter
+436,0.25 cup,chocolate chips
+437,1.0 servings,egg
+438,0.5 cup,erythritol
+439,1.25 cup,flour
+440,1.0 teaspoon,liquid stevia
+441,0.25 teaspoon,salt
+442,0.5 cup,unsweetened cocoa powder
+443,1.0 teaspoon,vanilla extract
+444,0.5 cup,zucchini
+445,0.666666666667 cup,coconut cream
+446,1.0 tablespoons,coffee
+447,14.0 ounce,full-fat coconut milk
+448,1.0 tablespoon,instant coffee
+449,0.666666666667 cup,maple syrup
+450,0.5 teaspoon,sea salt
+451,0.666666666667 cup,strong brewed coffee
+452,2.0 teaspoons,vanilla extract
+453,0.5 tsp,black pepper
+454,8.0 oz,broccoli crowns
+455,1.0 servings,carrot
+456,2.0 stalks,celery
+457,0.5 tsp,dry mustard
+458,3.0 cloves,garlic
+459,0.25 tsp,nutmeg
+460,1.0 servings,onion
+461,0.25 tsp,paprika
+462,1.0 servings,potato
+463,1.0 tsp,salt
+464,1.0 cup,sharp cheddar cheese
+465,0.5 cup,sour cream
+466,28.0 ounce,vegetable broth
+467,1.0 tablespoon,whole wheat flour
+468,2.0 teaspoons,baking powder
+469,0.666666666667 cup,brown sugar
+470,3.4 ounces,butterscotch pudding mix
+471,0.75 cup,canola oil
+472,4.0 servings,eggs
+473,2.0 cups,flour
+474,2.0 teaspoons,ground cinnamon
+475,3.4 ounces,instant vanilla pudding mix
+476,0.5 cup,pecans
+477,1.0 teaspoon,salt
+478,1.0 cup,sugar
+479,1.0 teaspoon,vanilla extract
+480,1.0 cup,water
+481,0.5 cup,avocado
+482,0.5 teaspoon,black pepper
+483,1.0 servings,jalapeno
+484,1.0 cup,lettuce
+485,1.0 teaspoon,olive oil
+486,0.5 cup,onions
+487,1.0 pound,salmon fillet
+488,0.5 cup,sour cream
+489,0.5 packet,taco seasoning
+490,0.5 cup,tomatoes
+491,1.0 can,canned corn
+492,2.0 lbs,chicken tenders
+493,1.0 tsp,chili powder
+494,8.0 oz,cream cheese
+495,1.0 Tbs,cumin
+496,1.0 servings,onion
+497,1.0 servings,red bell pepper
+498,8.0 servings,tortillas
+499,1.0 tsp,basil
+500,1.5 cups,beef broth
+501,2.0 servings,bell peppers
+502,15.0 oz,canned tomatoes
+503,0.05 servings,cracked pepper
+504,1.0 clove,garlic
+505,0.5 lb,ground beef
+506,1.0 Tbsp,olive oil
+507,1.0 servings,onion
+508,1.0 tsp,oregano
+509,1.0 cup,rice
+510,8.0 oz,tomato sauce
+511,1.0 tsp,worcestershire sauce
+512,4.0 servings,asparagus
+513,0.5 teaspoon,dried basil
+514,0.5 teaspoon,dried thyme
+515,1.0 tablespoon,fat of choice
+516,1.0 teaspoon,garlic powder
+517,1.0 teaspoon,onion powder
+518,6.0 oz,salmon
+519,4.0 servings,salt and pepper
+520,12.0 servings,whole eggs
+521,0.25 teaspoon,almond extract
+522,2.0 cups,flour
+523,0.25 cup,granulated sugar
+524,24.0 servings,jam
+525,0.5 teaspoon,salt
+526,1.0 cup,unsalted butter
+527,0.5 teaspoon,vanilla extract
+528,28.0 oz,canned tomatoes
+529,1.0 teaspoon,chili powder
+530,1.0 teaspoon,cumin
+531,1.0 teaspoon,curry powder
+532,4.0 servings,eggs
+533,1.0 Tablespoon,extra virgin olive oil
+534,4.0 cloves,garlic
+535,1.0 cup,kale
+536,4.0 servings,lemon pepper seasoning
+537,1.0 servings,onion
+538,0.5 teaspoon,turmeric
+539,1.0 teaspoon,baking powder
+540,1.0 cup,butter
+541,2.0 servings,eggs
+542,2.0 cups,flour
+543,2.0 servings,lemon zest
+544,0.5 cup,meyer lemon
+545,1.0 cup,plain greek yogurt
+546,1.0 tablespoon,poppy seeds
+547,0.25 teaspoon,salt
+548,1.75 cups,sugar
+549,0.5 teaspoon,vanilla
+550,0.333333333333 pound,bacon
+551,6.0 servings,basil
+552,0.75 cup,chicken stock
+553,1.0 servings,chile pepper
+554,3.0 servings,egg yolks
+555,1.0 tablespoon,extra virgin olive oil
+556,1.0 pound,fettuccine
+557,1.0 handful,fresh flat-leaf parsley
+558,1.0 tablespoon,fresh thyme
+559,6.0 cloves,garlic
+560,1.0 servings,lemon
+561,2.0 handfuls,parmigiano reggiano cheese
+562,2.0 handfuls,pecorino romano cheese
+563,6.0 servings,salt and pepper
+564,1.0 bunch,scallions
+565,10.0 slices,bacon
+566,2.0 tablespoons,butter
+567,1.0 clove,garlic
+568,2.0 cups,grits
+569,0.25 cup,half and half
+570,0.5 cup,onion
+571,1.0 pound,scallops
+572,2.0 cups,shredded cheddar cheese
+573,4.0 cups,water
+574,6.0 servings,bacon rashers
+575,9.0 slices,bread
+576,1.0 servings,carrot
+577,12.0 slices,cucumber
+578,1.0 servings,lettuce
+579,2.0 servings,tomatoes
+580,200.0 g,pack cheese
+581,454.0 grams,elbow macaroni
+582,60.0 ml,flat-leaf parsley
+583,60.0 ml,flour
+584,473.0 ml,fontina cheese
+585,237.0 ml,panko breadcrumbs
+586,118.0 ml,parmigiano reggiano cheese
+587,8.0 servings,salt and pepper
+588,710.0 ml,sharp cheddar cheese
+589,1.0 can,truffle mushrooms
+590,60.0 ml,unsalted butter
+591,946.0 ml,whole milk
+592,0.5 tsp,baking soda
+593,12.0 ounces,chocolate
+594,0.75 cup,cocoa powder
+595,0.333333333333 cup,coconut oil
+596,1.0 servings,confectioners sugar
+597,0.75 cup,creamy peanut butter
+598,1.0 servings,egg
+599,1.0 quart,ice cream
+600,1.0 tsp,kosher salt
+601,1.0 tablespoon,milk
+602,1.0 cup,semisweet chocolate chips
+603,0.75 cup,sugar
+604,1.5 cups,unbleached flour
+605,1.0 cup,unsalted butter
+606,1.0 tsp,vanilla extract
+607,0.25 cup,brown sugar
+608,2.0 teaspoons,canola oil
+609,0.666666666667 cup,celery
+610,2.0 tablespoons,chili powder
+611,1.0 servings,green bell pepper
+612,1.0 cup,ketchup
+613,0.25 cup,low sodium chicken broth
+614,0.333333333333 cup,onion
+615,24.0 ounces,pork loin chops
+616,2.0 slices,bacon
+617,1.0 Tablespoon,butter
+618,2.0 Tablespoons,cornstarch
+619,1.0 cup,french fried onions
+620,1.0 lb,green beans
+621,4.0 servings,salt and pepper
+622,7.0 servings,white mushrooms
+623,2.0 cups,whole milk
+624,0.5 cup,yellow onion
+625,6.0 ounces,baking chocolate
+626,1.0 teaspoon,baking powder
+627,1.0 cup,butter
+628,6.0 servings,eggs
+629,3.0 cups,flour
+630,1.0 cup,pecans
+631,0.5 teaspoon,salt
+632,3.0 cups,sugar
+633,10.0 ounces,vanilla
+634,2.0 teaspoons,vanilla extract
+635,1.0 box,brownie mix
+636,0.75 cup,canola oil
+637,2.0 containers,chocolate frosting
+638,2.0 servings,eggs
+639,2.0 cups,oreo cookie
+640,0.25 cup,water
+641,0.25 cup,dried cranberries
+642,1.0 servings,egg
+643,0.333333333333 cup,honey
+644,1.0 Tablespoon,kosher salt
+645,0.5 cup,old-fashioned oats
+646,0.25 cup,pepitas
+647,1.0 servings,pumpkin pie spice
+648,0.75 cup,rye flour
+649,4.0 cups,unbleached flour
+650,5.0 Tablespoons,unsalted butter
+651,2.0 cups,water
+652,0.75 cup,whole wheat flour
+653,1.5 tablespoons,yeast
+654,9.0 servings,neutral- tasting oil
+655,2.0 tablespoons,butter
+656,2.0 tablespoons,celery
+657,3.0 cups,chicken broth
+658,2.0 tablespoons,flour
+659,4.0 servings,fresh parsley
+660,0.125 teaspoon,ground nutmeg
+661,1.0 cup,half n half cream
+662,0.5 cup,milk
+663,2.0 tablespoons,onion
+664,1.0 cup,walnuts
+665,3.0 slices,bacon
+666,0.25 cup,corn oil
+667,1.0 servings,green bell pepper
+668,16.0 ounce,okra
+669,1.0 servings,onion
+670,1.0 servings,tomato
+671,0.333333333333 cup,white sugar
+672,0.25 cup,white vinegar
+673,2.0 cups,angel food cake
+674,2.0 servings,apricots
+675,24.0 servings,cherries
+676,4.0 servings,cinnamon
+677,1.0 servings,juice of orange
+678,1.0 servings,nectarine
+679,1.0 cup,nonfat cool whip
+680,4.0 servings,nutmeg
+681,2.0 servings,peaches
+682,1.0 servings,plum
+683,1.0 bunch,bok choy
+684,1.0 bunch,broccolini
+685,4.0 servings,cooking oil
+686,2.0 cloves,garlic
+687,450.0 g,hokkien noodles
+688,0.25 cup,maple syrup
+689,1.0 pinch,salt
+690,2.0 Tbsps,sesame oil
+691,2.0 Tbsps,sesame seeds
+692,0.25 cup,soy sauce
+693,2.0 servings,spring onions
+694,200.0 g,tofu
+695,1.0 tsp,TSP
+696,2.0 Tbsps,water
+697,1.0 tbsp,balsamic vinegar
+698,2.0 tsp,brown sugar
+699,2.0 tbsp,butter
+700,64.0 ounces,chicken broth
+701,3.0 tbsp,flour
+702,4.0 servings,french bread
+703,2.0 tbsp,fresh thyme
+704,3.0 servings,garlic cloves
+705,4.0 servings,low fat swiss cheese
+706,0.5 tsp,pepper
+707,0.5 tsp,salt
+708,4.0 servings,sweet onions
+709,1.0 tbsp,worcestershire sauce
+710,2.0 servings,bay leaves
+711,0.75 cup,breadcrumbs
+712,1.0 tablespoon,butter
+713,0.5 cup,carrot
+714,2.0 cups,chicken stock
+715,1.0 teaspoon,cornstarch
+716,2.0 servings,eggs
+717,0.25 cup,flour
+718,0.25 cup,fresh parsley
+719,0.333333333333 cup,ham
+720,4.0 servings,kosher salt
+721,2.0 pounds,lamb rib chops
+722,1.0 cup,onion
+723,2.0 tablespoons,port
+724,0.25 cup,red wine vinegar
+725,1.0 bunch,thyme
+726,0.5 cup,vegetable oil
+727,0.25 teaspoon,black pepper
+728,0.25 teaspoon,ground cardamom
+729,0.5 teaspoon,ground cinnamon
+730,0.5 teaspoon,ground coriander
+731,0.25 teaspoon,ground cumin
+732,10.0 servings,kosher salt
+733,1.0 tablespoon,lime juice
+734,1.0 teaspoon,lime zest
+735,0.25 teaspoon,nutmeg
+736,0.75 cup,pomegranate seeds
+737,1.0 tablespoon,rose wine
+738,0.5 cup,unsalted butter
+739,4.0 pounds,winter squash
+740,1.0 lb,breakfast sausage
+741,28.0 oz,canned great northern beans
+742,28.0 oz,canned tomatoes
+743,2.0 rib,celery
+744,32.0 oz,chicken broth
+745,1.0 t,dried basil
+746,1.0 t,dried oregano
+747,0.75 t,dried rosemary
+748,3.0 cloves,garlic
+749,0.5 cup,onion
+750,1.0 servings,beans
+751,15.0 ounce,canned black beans
+752,0.5 teaspoon,coriander
+753,10.0 servings,corn tortillas
+754,0.5 teaspoon,cumin
+755,0.5 cup,fresh cilantro
+756,0.5 cup,fresh corn kernels
+757,1.0 clove,garlic
+758,0.25 teaspoon,kosher salt
+759,1.5 tablespoons,olive oil
+760,0.25 cup,pepitas
+761,0.5 cup,red onion
+762,1.0 servings,roasted red pepper
+763,2.0 cups,salsa verde
+764,0.25 teaspoon,smoked paprika
+765,0.25 cup,water
+766,1.5 cups,zucchini
+767,0.333333333333 cup,carrot juice
+768,2.0 tsps,fresh ginger
+769,2.0 tsps,low sodium soy sauce
+770,2.0 Tbsps,mirin
+771,2.0 Tbsps,orange juice
+772,0.125 tsp,red pepper flakes
+773,1.0 Tbsp,safflower oil
+774,1.0 servings,scallion
+775,0.25 tsp,sesame oil
+776,1.0 Tbsp,sesame seeds
+777,3.0 Tbsps,sesame seeds
+778,1.0 Tbsp,white distilled vinegar
+779,2.0 tsps,white miso
+780,1.0 lb,yellowfin tuna
+781,15.0 oz,canned black beans
+782,2.0 tsp,chili powder
+783,0.25 cup,cream
+784,0.5 lb,extra lean ground beef
+785,4.0 10-inch,flour tortillas
+786,1.0 cup,romaine lettuce
+787,0.5 cup,salsa
+788,0.666666666667 cup,sharp cheddar cheese
+789,1.0 servings,tomato
+790,0.5 cup,bread
+791,1.0 servings,egg
+792,500.0 ml,milk
+793,1.0 serving,sugar
+794,4.0 drops,vanilla essence
+795,8.0 oz,cauliflower florets
+796,1.0 Tbs,dijon mustard
+797,2.0 Tbs,fresh parsley
+798,1.0 tsp,garlic
+799,3.0 Tbs,lemon juice
+800,1.0 tsp,olive oil
+801,0.25 cup,parmesan cheese
+802,1.0 servings,red bell pepper
+803,250.0 ml,balsamic vinegar
+804,1.0 servings,bay leaf
+805,2.0 kg,beef
+806,300.0 ml,beef stock
+807,3.0 servings,carrots
+808,1.0 tbsp,cornflour
+809,3.0 servings,garlic cloves
+810,1.0 servings,onion
+811,5.0 servings,thyme sprigs
+812,1.0 tsp,balsamic vinegar
+813,1.75 lb,blackberries
+814,0.333333333333 cup,brown sugar
+815,3.0 Tbs,canola oil
+816,16.0 Tbs,flour
+817,5.0 Tbs,maple syrup
+818,0.666666666667 cup,pecans
+819,0.666666666667 cup,rolled oats
+820,0.25 tsp,salt
+821,3.0 Tbs,sugar
+822,6.0 slicesslices,bacon
+823,6.0 servings,burger buns
+824,0.25 cup,canned coconut milk
+825,6.0 slices,cheddar cheese
+826,1.0 teaspoon,chili powder
+827,1.0 servings,chipotle chile
+828,0.25 cup,fresh cilantro
+829,2.0 tablespoons,greek yogurt
+830,6.0 servings,green onions
+831,0.5 pound,ground chorizo
+832,1.0 servings,guacamole
+833,1.0 pound,lean ground beef
+834,1.0 tablespoon,lime juice
+835,0.25 teaspoon,pepper
+836,0.5 servings,pepper
+837,1.0 cup,salsa
+838,5.0 servings,salt and pepper
+839,1.25 cups,sharp cheddar cheese
+840,0.25 teaspoon,smoked paprika
+841,1.0 pound,tater tots
+

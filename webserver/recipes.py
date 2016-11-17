@@ -1,64 +1,53 @@
-import requests
 from sqlalchemy import *
 from sqlalchemy.pool import NullPool
 import csv
 
-ri = open("recipeingredients.csv", 'wt')
-i = open("ingredients.csv", 'wt')
-r = open("recipes.csv", 'wt')
-
-writer1 = csv.writer(ri)
-writer2 = csv.writer(i)
-writer3 = csv.writer(r)
-
-writer1.writerow(['reid','quantity','info'])
-writer2.writerow(['iid','name','type'])
-writer3.writerow(['name','rid','directions'])
+DATABASEURI = "postgresql://jnb2135:26mxk@104.196.175.120/postgres"
+engine = create_engine(DATABASEURI)
+'''reid = 30
+quantity = "cup"
+info = "test"
+statement = ("""INSERT INTO recipeingredients VALUES ("""+str(reid)+""",'"""+quantity+"""','"""+info+"""');""")
+print statement
+engine.execute(statement)'''
 
 
-response = requests.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/random?limitLicense=false&number=100",
-  	headers={
-    	"X-Mashape-Key": "k3i1BgqpUymshOgQu5TFPBC1HMM4p1uolUijsnVf9e4eEFFrVQ",
-    	"Accept": "application/json"
- 	}
-)
+ri = open("recipeingredients.csv", 'rt')
+i = open("ingredients.csv", 'rt')
+r = open("recipes.csv", 'rt')
+co = open("contains.csv", 'rt')
+u = open("utilizes.csv", 'rt')
 
-r = response.json()
+reader1 = csv.reader(ri)
+reader2 = csv.reader(i)
+reader3 = csv.reader(r)
+reader4 = csv.reader(co)
+reader5 = csv.reader(u)
 
-count=1
-count2=1
-check = 0
-ingredients = []
-for i in range(0,len(r['recipes'])):
-	recipeingredients = []
-	
-	if r['recipes'][i]['instructions'] is not None and '<' not in r['recipes'][i]['instructions']:
-		if r['recipes'][i]['instructions'][0] != " ":
-			check=1
-			writer3.writerow([r['recipes'][i]['title'].encode('utf-8'),count2,r['recipes'][i]['instructions'].encode('utf-8')])
-	
-	if check == 1:
-		for element in r['recipes'][i]['extendedIngredients']:
-			if element['name'] not in ingredients:
-				ingredients.append(element['name'])
-				t=element['aisle']
-				#statement = text("""INSERT INTO recipeingredients VALUES(:iid, :name, :type)""")
-				#engine.execute(statement, iid=len(ingredients), name=element['name'], type=t)
-				writer2.writerow([len(ingredients), element['name'], t])
+#for row in reader1:
+#	if row[0].isdigit():
+#		statement = ("""INSERT INTO recipeingredients VALUES ("""+row[0]+""",'"""+row[1].replace("'","")+"""','"""+row[2].replace("'","")+"""');""")
+#		engine.execute(statement)
 
 
-			unit = element['unit']
-		
-			if element['unit'] == '':
-				unit = "servings"
+#for row in reader2:
+#	if row[0].isdigit():
+#		statement = ("""INSERT INTO ingredients VALUES ("""+row[0]+""",'"""+row[1].replace("'","")+"""','"""+row[2].replace("'","")+"""');""")
+#		engine.execute(statement)
 
-			writer1.writerow([count ,str(element['amount']) + ' ' + unit, element['name']])
-			#statement = text("""INSERT INTO recipeingredients VALUES(:reid, :quantity, :info)""")
-			#engine.execute(statement, reid=count, quantity=recipe[0], info=recipe[1])
-			count+=1
-		
-		count2+=1
+#for row in reader3:
+#	if row[1].isdigit():
+#		statement = ("""INSERT INTO recipes VALUES ('"""+row[0].replace("'","")+"""','"""+row[1]+"""','"""+row[2].replace("'","")+"""');""")
+#		engine.execute(statement)
 
-	check=0
-	
-	
+#for row in reader4:
+#	if row[0].isdigit():
+#		statement = ("""INSERT INTO contains  VALUES ('"""+row[0]+"""','"""+row[1]+"""');""")
+#		engine.execute(statement)
+
+for row in reader5:
+	if row[0].isdigit():
+		statement = ("""INSERT INTO utilizes  VALUES ('"""+row[0]+"""','"""+row[1]+"""');""")
+		engine.execute(statement)
+
+
