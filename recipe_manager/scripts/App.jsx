@@ -33,7 +33,7 @@ export default class App extends Component {
     this.verifyUser = this.verifyUser.bind(this);
     this.addUser = this.addUser.bind(this);
     this.getCurrentFilters = this.getCurrentFilters.bind(this);
-    this.sync = this.sync.bind(this);
+    // this.sync = this.sync.bind(this);
     // this.sync();
 
   }
@@ -59,35 +59,35 @@ export default class App extends Component {
   * handled by the App component
   */
 
-  sync() {
-
-    //TODO:send item
-    this.setState({isLoading:true});
-    $.ajax({
-      url: '/sync',
-      method: 'POST',
-      data: {
-      },
-      success: function(data) {
-        console.log("returned data" + JSON.stringify(data));
-
-        console.log("right after ajax call");
-        //Create item
-        //Update State
-        this.setState({
-          pantry: data.pantry,
-          recipes: data.recipes,
-          isLoading: false
-        });
-        var Items = data.recipes.map((item) => {
-          return (
-            {name:item.name, rid:item.rid, instructions:item.instructions}
-          );
-        });
-        this.setState({isLoading:false, recipes : Items});
-
-      }.bind(this)});
-    }
+  // sync() {
+  //
+  //   //TODO:send item
+  //   this.setState({isLoading:true});
+  //   $.ajax({
+  //     url: '/sync',
+  //     method: 'POST',
+  //     data: {
+  //     },
+  //     success: function(data) {
+  //       console.log("returned data" + JSON.stringify(data));
+  //
+  //       console.log("right after ajax call");
+  //       //Create item
+  //       //Update State
+  //       this.setState({
+  //         pantry: data.pantry,
+  //         recipes: data.recipes,
+  //         isLoading: false
+  //       });
+  //       var Items = data.recipes.map((item) => {
+  //         return (
+  //           {name:item.name, rid:item.rid, instructions:item.instructions}
+  //         );
+  //       });
+  //       this.setState({isLoading:false, recipes : Items});
+  //
+  //     }.bind(this)});
+  //   }
 
 
 
