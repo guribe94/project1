@@ -106,11 +106,17 @@ export default class App extends Component {
       success: function(data) {
         console.log("returned data" + JSON.stringify(data));
 
+        var Items = data.map((item) => {
+          return (
+            {name:item.name, id:item.rid, instructions:item.instructions}
+          )
+        });
+
         console.log("right after ajax call");
         //Create item
         //Update State
         this.setState({
-          pantry: data.pantry
+          pantry: Items
         });
 
       }.bind(this)});
