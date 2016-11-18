@@ -40,6 +40,7 @@ export default class App extends Component {
     this.addUser = this.addUser.bind(this);
     this.getCurrentFilters = this.getCurrentFilters.bind(this);
     this.sync = this.sync.bind(this);
+    this.sync();
 
   }
 
