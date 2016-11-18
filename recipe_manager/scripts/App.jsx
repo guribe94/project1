@@ -12,13 +12,6 @@ export default class App extends Component {
     this.state = {
       pantry: [],
       recipes: [
-        {
-          name: "recipe1",
-          id: "1"
-        }, {
-          name: "recipe2",
-          id: "2"
-        }
       ],
       isLoading: false,
       hasUser: false,
@@ -90,7 +83,7 @@ export default class App extends Component {
             {name:item.name, id:item.rid, instructions:item.instructions}
           );
         });
-        this.setState({isLoading:true});
+        this.setState({isLoading:false, recipes : Items});
 
       }.bind(this)});
     }

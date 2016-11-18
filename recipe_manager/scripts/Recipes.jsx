@@ -27,7 +27,7 @@ export default class Recipes extends Component {
       );
     } else {
       // Loop through the list of items in the pantry
-      var Items = this.state.items.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS)).map((data) => {
+      var Items = this.props.items.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS)).map((data) => {
         return (
           //Generate a row for each item for the list
           <RecipeRow key={data.id} name={data.name} recipe={data.instructions} rmFunc={this.props.rmFunc} />

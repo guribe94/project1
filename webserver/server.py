@@ -456,17 +456,15 @@ def searchDatabase():
 		if (set(ingredients)).issubset(set(pantry)):
 			statement = ("""SELECT rid, name, instructions FROM recipes WHERE rid="""+str(row[0])+""";""")
 			cursor4= g.conn.execute(statement)
-                        store = cursor4.fetchone()
-			print ingredients
-			print pantry			
-			if store[0]!= 'name':
+                        store = cursor4.fetchone()			
+			if store[0]!= 'name' and len(ingredients)!=0:
 				recipes.append({'id':store[0], 'name':store[1], 'recipe':store[2]})
 		
 		ingredients = []
 
 			
 	 output = {'recipes':recipes}				
-         #print output
+         print output
 	 return jsonify(output)
 
 
