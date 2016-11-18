@@ -56,7 +56,7 @@ export class PantryInsert extends Component {
       <input type="text" name="name" ref='name' placeholder='Item'/>
 
       <button
-      className="btn btn-block btn-lg btn-primary"
+      className="btn btn-block btn-sm btn-primary"
       onClick={this.handleInsertEvent}>Add</button>
       </form>
     );
@@ -102,7 +102,7 @@ export class PantryRow extends Component {
       <div className='PantryRow' >
       <p>Name: {this.props.name}</p>
       <button
-      className="btn btn-block btn-lg btn-danger"
+      className="btn btn-block btn-sm btn-danger"
       onClick={this.handleDeleteEvent}>Delete</button>
 
       </div>

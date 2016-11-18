@@ -32,7 +32,7 @@ export default class Recipes extends Component {
       var Items = this.state.items.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS)).map((data) => {
         return (
           //Generate a row for each item for the list
-          <RecipeRow key={data.id} name={data.name} rmFunc={this.props.rmFunc} />
+          <RecipeRow key={data.rid} name={data.name} recipe={data.instructions} rmFunc={this.props.rmFunc} />
         )
       });
       return (
@@ -56,6 +56,7 @@ export class RecipeRow extends Component {
     super(props);
     this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
     this.name = this.props.name;
+    this.recipe = this.props.recipe;
 
   }
 
@@ -87,6 +88,10 @@ export class RecipeRow extends Component {
       // Add your component markup and other subcomponent references here.
       <div className='RecipeRow' onClick={this.handleClick.bind(this)} >
         <div className='RecipeName'>{this.name}</div>
+        <br />
+        <p>Recipe:</p>
+        <br />
+        <div className='RecipeInstructions'>{this.recipe}</div>
       </div>
     );
   }

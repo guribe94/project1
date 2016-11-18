@@ -68,8 +68,8 @@ export default class Header extends Component {
                   <input type="text" name="passwd" ref='passwd' placeholder='Password'/>
                   <span className="input-group-btn">
 
-                    <button className="btn btn-block btn-lg btn-primary" onClick={this.handleLoginEvent.bind(this)}>Logon</button>
-                    <button className="btn btn-block btn-lg btn-primary" onClick={this.handleRegisterEvent.bind(this)}>Register</button>
+                    <button className="btn btn-block btn-sm btn-primary" onClick={this.handleLoginEvent.bind(this)}>Logon</button>
+                    <button className="btn btn-block btn-sm btn-primary" onClick={this.handleRegisterEvent.bind(this)}>Register</button>
                   </span>
                 </div>
               </div>

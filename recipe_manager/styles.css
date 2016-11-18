@@ -16,21 +16,23 @@ body{
 }
 
 .Recipes{
+  display: inline-block;
 }
 
 .Panty{
-
+  display: inline-block;
 }
 
 .Search {
-
+  display: inline-block;
 }
 
 .main {
-  width: 50%;
+  width: 80%;
   height: 75%;
   float:left;
   margin: 5%;
+  justify-content: center;
 }
 
 .login{
