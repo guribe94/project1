@@ -5,8 +5,6 @@ var Loading = require('react-loading');
 
 
 
-
-
 export default class Recipes extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +30,7 @@ export default class Recipes extends Component {
       var Items = this.state.items.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS)).map((data) => {
         return (
           //Generate a row for each item for the list
-          <RecipeRow key={data.rid} name={data.name} recipe={data.instructions} rmFunc={this.props.rmFunc} />
+          <RecipeRow key={data.id} name={data.name} recipe={data.instructions} rmFunc={this.props.rmFunc} />
         )
       });
       return (
