@@ -427,8 +427,7 @@ def searchDatabase():
      Search database according to given query
      """
 
-     user = request.form['username']
-     query = request.form['query']
+     
      # TODO: DO THE SEARCH
      if (request.method == "POST"):
          output = {}
@@ -440,26 +439,36 @@ def searchDatabase():
 	 	pantry.append(row[0])
 
 	 recipes = []
+	 ingredients = []	 
+
 	 statement = ("""SELECT rid FROM recipes;""")
 	 cursor1 = g.conn.execute(statement)
 	 for row in cursor1:
-		statement = ("""SELECT reid FROM contains WHERE rid ="""+row[0]+""";""")
+		statement = ("""SELECT reid FROM contains WHERE rid ="""+str(row[0])+""";""")
 		cursor2 = g.conn.execute(statement)
-		ingredients = []
+		
 		for row2 in cursor2:
-			statement = ("""SELECT name FROM contains,recipeingredients WHERE reid="""+row2[0]+""";""")
+			statement = ("""SELECT info FROM contains,recipeingredients WHERE recipeingredients.reid="""+str(row2[0])+""";""")
 			cursor3 = g.conn.execute(statement)
- 			ingredients.append(cursor3.fetchone())
-
+                        temp = cursor3.fetchone()
+ 			ingredients.append(temp[0])
+		
 		if (set(ingredients)).issubset(set(pantry)):
-			statement = ("""SELECT name,directions FROM recipes WHERE rid="""+row[0]+""";""")
+			statement = ("""SELECT rid, name, instructions FROM recipes WHERE rid="""+str(row[0])+""";""")
 			cursor4= g.conn.execute(statement)
-			recipes.append(dict(cursor4.fetchone()))
+                        store = cursor4.fetchone()
+			print ingredients
+			print pantry			
+			if store[0]!= 'name':
+				recipes.append({'id':store[0], 'name':store[1], 'recipe':store[2]})
+		
+		ingredients = []
 
+			
+	 output = {'recipes':recipes}				
+         #print output
+	 return jsonify(output)
 
-
-	 output = {'recipes':recipes}
-         return jsonify(output)
 
 
 
@@ -473,7 +482,7 @@ def register():
         # JSON data from the POST request
         username = request.form["username"]
         passwd = request.form["password"]
-	statement = ("""SELECT username FROM users;""")
+	statement = ("""SELECT name FROM users;""")
         cursor = g.conn.execute(statement)
         uid = 0
         for row in cursor:
@@ -484,7 +493,7 @@ def register():
         print "password given", passwd
 
         # TODO: Create the user
-        statement = ("""SELECT username FROM users;""")
+        statement = ("""SELECT name FROM users;""")
         cursor = g.conn.execute(statement)
         success = True
         for row in cursor:
@@ -503,13 +512,13 @@ def register():
 
 
         # Store the user with the sessionkey
-        _init_store(session_id)
+        '''_init_store(session_id)
         global session_info
         try:
             session_info[session_id] = userid
         except:
             output["success"] = False
-            output["sessionKey"] = ''
+            output["sessionKey"] = '''''
 
         output = {success:username}
         return jsonify(output)
