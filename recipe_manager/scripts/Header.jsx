@@ -53,41 +53,14 @@ export default class Header extends Component {
   //     }
 
   render() {
-
-    if(!this.props.hasUser){
       return (
         <div className="header">
           <nav className="navbar navbar-default" role="navigation">
             <div className="navbar-header">
               <a className="navbar-brand" href="#">Recipe Manager</a>
             </div>
-            <form className="navbar-form navbar-right" action="#" role="login">
-              <div className="form-group">
-                <div className="input-group form-control">
-                  <input type="text" name="username" ref='username' placeholder='Username'/>
-                  <input type="text" name="passwd" ref='passwd' placeholder='Password'/>
-                  <span className="input-group-btn">
-
-                    <button className="btn btn-block btn-sm btn-primary" onClick={this.handleLoginEvent.bind(this)}>Logon</button>
-                    <button className="btn btn-block btn-sm btn-primary" onClick={this.handleRegisterEvent.bind(this)}>Register</button>
-                  </span>
-                </div>
-              </div>
-            </form>
           </nav>
         </div>
       );
-    }else{
-      return (
-        <div className="header">
-          <nav className="navbar navbar-default" role="navigation">
-            <div className="navbar-header">
-              <a className="navbar-brand" href="#">Recipe Manager</a>
-            </div>
-            <p className="navbar-text navbar-right">Welcome {this.props.sessionKey}</p>
-          </nav>
-        </div>
-      );
-    }
   }
 }

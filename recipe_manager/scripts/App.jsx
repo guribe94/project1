@@ -12,6 +12,7 @@ export default class App extends Component {
     this.state = {
       pantry: [],
       recipes: [
+        {rid:1, name: "burger", instructions:"thisishi"}
       ],
       isLoading: false,
       hasUser: false,
@@ -33,7 +34,7 @@ export default class App extends Component {
     this.addUser = this.addUser.bind(this);
     this.getCurrentFilters = this.getCurrentFilters.bind(this);
     this.sync = this.sync.bind(this);
-    this.sync();
+    // this.sync();
 
   }
 
@@ -80,13 +81,14 @@ export default class App extends Component {
         });
         var Items = data.recipes.map((item) => {
           return (
-            {name:item.name, id:item.rid, instructions:item.instructions}
+            {name:item.name, rid:item.rid, instructions:item.instructions}
           );
         });
         this.setState({isLoading:false, recipes : Items});
 
       }.bind(this)});
     }
+
 
 
 
@@ -229,17 +231,17 @@ export default class App extends Component {
 
     }
 
-      // var currentFilters = this.getCurrentFilters();
+    // var currentFilters = this.getCurrentFilters();
 
-      // $.ajax({
-      //   url: '/chat',
-      //   method: 'POST',
-      //   data: {},
-      //   success: function(data) {
-      //
-      //     }
-      //   }.bind(this)
-      // });
+    // $.ajax({
+    //   url: '/chat',
+    //   method: 'POST',
+    //   data: {},
+    //   success: function(data) {
+    //
+    //     }
+    //   }.bind(this)
+    // });
 
 
 
@@ -298,6 +300,11 @@ export default class App extends Component {
     }
 
     render() {
+      if(this.state.recipes === []){
+        this.sync();
+      }
+
+
       return (
         <div id="App">
 
@@ -305,8 +312,8 @@ export default class App extends Component {
           <div className="main">
             <Pantry items={this.state.pantry} addFunc={this.insertToPantry} rmFunc={this.removeFromPantry} loading={this.state.isLoading} editFunc={this.editPantryItem}/>
             <Recipes className='Recipes' items={this.state.recipes} addFunc={this.insertToRecipes} rmFunc={this.removeFromRecipes} editFunc={this.editPantryItem} filterFunc={this.filterRecipes} loading={this.state.isLoading}/>
-          <Search className='Search' searchFunc={this.search} filterFunc={this.filterRecipes} inPantry={this.state.inPantryFilter}  quick={this.state.quickFilter} noMeat={this.state.noMeatFilter}/>
-        </div>
+            <Search className='Search' searchFunc={this.search} inPantry={this.state.inPantryFilter}  quick={this.state.quickFilter} noMeat={this.state.noMeatFilter}/>
+          </div>
         </div>
       );
     }
