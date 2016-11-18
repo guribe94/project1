@@ -54,22 +54,8 @@ export class RecipeRow extends Component {
 
   constructor(props) {
     super(props);
-    this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
-    this.name = this.props.name;
-    this.recipe = this.props.recipe;
+    this.handleClick = this.handleClick.bind(this);
 
-  }
-
-  handleDeleteEvent(event){
-    if (event.type === "click"){
-      // var item = event.currentTarget;
-      console.log(item);
-      console.log("click happened");
-      console.log(this.id);
-      this.props.rmFunc(this.id);
-      event.preventDefault();
-
-    }
   }
 
 
@@ -87,11 +73,11 @@ export class RecipeRow extends Component {
     return (
       // Add your component markup and other subcomponent references here.
       <div className='RecipeRow' onClick={this.handleClick.bind(this)} >
-        <div className='RecipeName'>{this.name}</div>
+        <div className='RecipeName'>{this.props.name}</div>
         <br />
         <p>Recipe:</p>
         <br />
-        <div className='RecipeInstructions'>{this.recipe}</div>
+        <div className='RecipeInstructions'>{this.props.ingredients}</div>
       </div>
     );
   }
