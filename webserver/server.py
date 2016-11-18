@@ -85,7 +85,7 @@ def before_request():
 
   The variable g is globally accessible
   """
- 
+
   try:
     g.conn = engine.connect()
   except:
@@ -368,9 +368,9 @@ def deletePantryItem():
         itemID = request.form["pid"]
 
         print "itemID given", itemID
-	
+
 	statement = ("""DELETE FROM carries WHERE pid="""+itemID+""";""")
-	
+
 	statement = ("""DELETE FROM  pantry WHERE pid="""+itemID+""";""")
 	cursor = g.conn.execute(statement)
 
@@ -405,7 +405,6 @@ def sync():
     A call to this function is made whenever the appliction connects to the database and when it needs to sync its state with the database
     """
     output = {}
-    user = request.form['username']
   # TODO: Return pantry and recipes
   # print name
   # cmd = 'INSERT INTO test(name) VALUES (:name1), (:name2)';
@@ -417,7 +416,7 @@ def sync():
     	 li.append(dict(row))
     output = {'recipes':li}
     print output
-    
+
     return jsonify(output)
 
 
@@ -435,12 +434,12 @@ def searchDatabase():
          output = {}
 	 statement = ("""SELECT name FROM pantry;""")
 	 cursor1 = g.conn.execute(statement)
-	 
+
 	 pantry = []
          for row in cursor1:
 	 	pantry.append(row[0])
-	 
-	 recipes = []	 
+
+	 recipes = []
 	 statement = ("""SELECT rid FROM recipes;""")
 	 cursor1 = g.conn.execute(statement)
 	 for row in cursor1:
@@ -451,15 +450,15 @@ def searchDatabase():
 			statement = ("""SELECT name FROM contains,recipeingredients WHERE reid="""+row2[0]+""";""")
 			cursor3 = g.conn.execute(statement)
  			ingredients.append(cursor3.fetchone())
-		
+
 		if (set(ingredients)).issubset(set(pantry)):
 			statement = ("""SELECT name,directions FROM recipes WHERE rid="""+row[0]+""";""")
 			cursor4= g.conn.execute(statement)
 			recipes.append(dict(cursor4.fetchone()))
-		
 
-			
-	 output = {'recipes':recipes}				
+
+
+	 output = {'recipes':recipes}
          return jsonify(output)
 
 
@@ -479,7 +478,7 @@ def register():
         uid = 0
         for row in cursor:
             uid+=1
-            
+
 
         print "username given", username
         print "password given", passwd
@@ -491,12 +490,12 @@ def register():
         for row in cursor:
 		if row[0] == username:
 			success=False
-        
+
 	if success == True:
 		uid+=1
 		statement = ("""INSERT INTO users VALUES("""+str(uid)+""",'"""+username+"""','"""+passwd+""");""")
 		g.conn.execute(statement)
-        
+
 	output["success"] = success
         # sessionkey =
         print "output", output
@@ -529,7 +528,7 @@ def login():
 
         print "username given", username
         print "password given", passwd
-	
+
         sys.stdout.flush()
 
 	statement = ("""SELECT name,password FROM users;""")
