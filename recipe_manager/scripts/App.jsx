@@ -300,10 +300,6 @@ export default class App extends Component {
     }
 
     render() {
-      if(this.state.recipes === []){
-        this.sync();
-      }
-
 
       return (
         <div id="App">
