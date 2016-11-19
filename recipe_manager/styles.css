@@ -5,34 +5,70 @@ body{
 
 }
 
-.App{
-
-}
 
 .Header{
-  width: auto;;
+  width: auto;
   position: relative;
 
 }
 
 .Recipes{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+}
+
+div.filters{
+
+
+}
+
+div.pantry{
+  display: inline-block;
+  width: auto;
+}
+
+div.RecipeItems{
+  display: inline-block;
+  width: 40%;
+  float: right;
+}
+
+div#pantry_header{
+
   display: inline-block;
 }
 
-.Panty{
+div.search-recipes.form-control {
+  border: none;
+}
+
+button.btn.btn-block{
+
   display: inline-block;
+  width: 50%
 }
 
 .Search {
-  display: inline-block;
+  clear: both;
+  justify-content: center;
+  width: auto;
+  position: relative;
+
+}
+
+div {
+  position: relative;
+
 }
 
 .main {
   width: 80%;
   height: 75%;
   float:left;
-  margin: 5%;
+  margin: 10%;
   justify-content: center;
+  white-space: nowrap
 }
 
 .login{
